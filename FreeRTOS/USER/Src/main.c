@@ -19,10 +19,11 @@ static void led0_task(void *pvParameters)
 
 void AppTaskCreate(void *pvParameters)
 {
+    printf("AppTaskCreate任务创建中......\r\n");
     //创建任务
     xTaskCreate((TaskFunction_t )led0_task,
                 (const char*    )"led0_task",
-                (uint16_t       )120,
+                (uint16_t       )128,
                 (void*          )NULL,
                 (UBaseType_t    )4,
                 (TaskHandle_t *) LED0_Task_Handle);
@@ -42,10 +43,10 @@ int main(void)
     led_init();
     uart_init(115200);
     PrintfInit(USART1);
-
+    printf("正在启动.....\r\n");
     xTaskCreate((TaskFunction_t ) AppTaskCreate,
                 (const char*    )"AppTaskCreate",
-                (uint16_t       )120,
+                (uint16_t       )128,
                 (void*          )NULL,
                 (UBaseType_t    )3,
                 (TaskHandle_t*   )AppTaskCreate_Handle);
