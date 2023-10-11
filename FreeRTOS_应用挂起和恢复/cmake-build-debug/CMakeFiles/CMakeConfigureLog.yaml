@@ -1,0 +1,53 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      The target system is: Generic - 1 - 
+      The host system is: Windows - 10.0.22622 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: D:/Program Files (x86)/GNU Tools ARM Embedded/5.4 2016q3/bin/arm-none-eabi-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib\\libc.a(lib_a-exit.o): In function `exit':
+      exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: D:/Program Files (x86)/GNU Tools ARM Embedded/5.4 2016q3/bin/arm-none-eabi-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS_应用挂起和恢复/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o
+      
