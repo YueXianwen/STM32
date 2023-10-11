@@ -8,16 +8,19 @@
 #define START_TASK_PRIO     1
 #define LED0_TASK_PRIO      2
 #define LED1_TASK_PRIO      3
+#define KEY_TASK_PRIO      4
 
 //任务堆栈大小
 #define START_STK_SIZE      128
 #define LED0_STK_SIZE       128
 #define LED1_STK_SIZE       128
+#define KEY_STK_SIZE       128
 
 //任务句柄
 static TaskHandle_t AppTaskCreate_Handle;
 static TaskHandle_t LED0_Task_Handle;
 static TaskHandle_t LED1_Task_Handle;
+static TaskHandle_t KEY_Task_Handle;
 
 static void led0_task(void *pvParameters)
 {
