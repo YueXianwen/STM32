@@ -1,3 +1,0 @@
-D:/36348/CLionProjects/STM32/STM32F103RBT6/Intelligent_agriculture/cmake-build-debug/CMakeFiles/Intelligent_agriculture.elf.dir
-D:/36348/CLionProjects/STM32/STM32F103RBT6/Intelligent_agriculture/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/36348/CLionProjects/STM32/STM32F103RBT6/Intelligent_agriculture/cmake-build-debug/CMakeFiles/rebuild_cache.dir

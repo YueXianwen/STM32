@@ -49,11 +49,11 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(CORE/Inc SYSTEM/Inc STM32F10x_FWLib/Inc USER/Inc HARDWARE/Inc )
+include_directories(CORE/Inc SYSTEM/Inc STM32F10x_FWLib/Inc USER/Inc HARDWARE/Inc OLED/Inc)
 
 #add_definitions(-USE_STDPERIPH_DRIVER -DSTM32F10X_HD)
 
-file(GLOB_RECURSE SOURCES "Startup/*.*" "CORE/*.*" "SYSTEM/*.*" "STM32F10x_FWLib/*.*" "USER/*.*" "HARDWARE/*.*")
+file(GLOB_RECURSE SOURCES "Startup/*.*" "CORE/*.*" "SYSTEM/*.*" "STM32F10x_FWLib/*.*" "USER/*.*" "HARDWARE/*.*" "OLED/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103RBTX_FLASH.ld)
 
