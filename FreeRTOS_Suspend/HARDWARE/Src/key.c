@@ -1,6 +1,8 @@
 #include "stm32f10x.h"
 #include "delay.h"
 #include "key.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 /*
 KEY0		PC8
@@ -25,7 +27,7 @@ void key_init(void){
 u8 key_scan(void){
 	static u8 key_up = 1;
 	if(key_up&&(KEY0==0||KEY1==0||KEY2==0)){
-		delay_ms(10);
+        vTaskDelay(10);
 		key_up = 0;
 		if(KEY0==0)return KEY0_P;
 		else if(KEY1==0)return KEY1_P;
