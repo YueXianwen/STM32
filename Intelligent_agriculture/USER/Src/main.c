@@ -29,6 +29,10 @@ int main(void)
     uart_init(115200);
     PrintfInit(USART1);
     Adc_Init();
+    beep_init();
+    EXTIX_Init();
+    TIM2_PWM_Init(999, 7199);
+    TIM3_Int_Init(999, 7199);
     OLED_Init();
     OLED_Clear();
     delay_ms(1000);

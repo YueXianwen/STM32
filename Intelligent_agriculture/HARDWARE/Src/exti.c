@@ -57,7 +57,9 @@ void EXTIX_Init(void){
 void EXTI0_IRQHandler(void){
 	
 	delay_ms(10);
+    if(KEY_UP==1){
 
+    }
 	EXTI_ClearITPendingBit(EXTI_Line0);
 }
 
@@ -70,11 +72,18 @@ void EXTI2_IRQHandler(void){
 	EXTI_ClearITPendingBit(EXTI_Line2);
 }
 
+static u8 beeptemp = 1;
 void EXTI9_5_IRQHandler(void){
 	
 	delay_ms(10);
 	if(KEY0==0){
-		LED0 = 0;
+        if(beeptemp == 1){
+            TIM_Cmd(TIM3, ENABLE);
+            beeptemp = 0;
+        } else if (beeptemp == 0) {
+            TIM_Cmd(TIM3, DISABLE);
+            beeptemp = 1;
+        }
 		EXTI_ClearITPendingBit(EXTI_Line8);
 	}
 	if(KEY1==0){

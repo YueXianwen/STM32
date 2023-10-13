@@ -5,6 +5,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "delay.h"
+#include "exti.h"
 
 //任务优先级
 #define START_TASK_PRIO     1
@@ -19,11 +20,12 @@
 #define KEY_STK_SIZE        128
 
 //任务句柄
-static TaskHandle_t AppTaskCreate_Handle;
-static TaskHandle_t LED0_Task_Handle;
-static TaskHandle_t LED1_Task_Handle;
-static TaskHandle_t KEY_Task_Handle;
+TaskHandle_t AppTaskCreate_Handle;
+TaskHandle_t LED0_Task_Handle;
+TaskHandle_t LED1_Task_Handle;
+TaskHandle_t KEY_Task_Handle;
 
+//巡回判断
 void key_task(void *pvParameters)
 {
     u8 key_num;
@@ -36,15 +38,13 @@ void key_task(void *pvParameters)
                 printf("Task1 Suspend!!\r\n");
                 break;
             case KEY1_P:
-                vTaskSuspend(LED1_Task_Handle);
-                printf("Task2 Suspend!!\r\n");
-                break;
-            case KEY2_P:
                 vTaskResume(LED0_Task_Handle);
-                vTaskResume(LED1_Task_Handle);
-                printf("Tasks Resume!!\r\n");
+                printf("(任务中)Task1 Resume!!\r\n");
+                break;
+            default:
+                break;
         }
-        vTaskDelay(10);
+        delay_ms(10);
     }
 }
 
@@ -60,7 +60,7 @@ void led0_task(void *pvParameters)
 //            vTaskDelete(LED1_Task_Handle);
 //            printf("Task1 Delete Task2!!\r\n");
 //        }
-        vTaskDelay(500);
+        delay_ms(400);
     }
 }
 
@@ -72,7 +72,7 @@ void led1_task(void *pvParameters)
         task1_num++;
         LED1=!LED1;
         printf("Task2 Running: %lu!!\r\n", task1_num);
-        vTaskDelay(200);
+        delay_ms(500);
     }
 }
 
@@ -118,7 +118,8 @@ int main(void)
 {
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
     led_init();
-    key_init();
+//    key_init();
+    EXTIX_Init();
     delay_init();
     uart_init(115200);
     PrintfInit(USART1);

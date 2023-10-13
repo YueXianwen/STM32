@@ -9,3 +9,5 @@ void beep_init(void){
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; //IO 口速度为50MHz
 	GPIO_Init(GPIOB, &GPIO_InitStructure); //初始化GPIOC.0 和GPIOC.1
 }
+
+

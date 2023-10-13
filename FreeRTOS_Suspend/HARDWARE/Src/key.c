@@ -8,6 +8,7 @@
 KEY0		PC8
 KEY1		PC9
 KEY2		PD2
+KEYUP       PA0
 */
 
 //初始化函数
@@ -21,6 +22,10 @@ void key_init(void){
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2; 
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //上拉输入
 	GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD; //下拉输入
+    GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
 
 //按键处理函数

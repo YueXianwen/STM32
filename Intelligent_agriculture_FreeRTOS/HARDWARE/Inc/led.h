@@ -10,5 +10,8 @@ void led_init(void);
 #define LED2 PCout(2)
 #define LED3 PCout(3)
 #define LED4 PCout(4)
+#define LED5 PCout(5)
+#define LED6 PCout(6)
+#define LED7 PCout(7)
 
 #endif

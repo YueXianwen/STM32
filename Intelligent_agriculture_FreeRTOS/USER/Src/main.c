@@ -2,6 +2,7 @@
 #include "usart.h"
 #include "led.h"
 #include "beep.h"
+#include "relay.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "delay.h"
@@ -12,39 +13,68 @@
 
 //任务优先级
 #define START_TASK_PRIO     1
-#define KEY_PRIO            2
+#define OLED_PRIO           2
 #define ENVIR_PRIO          3
-#define OLED_PRIO           4
+#define BEEP_PRIO           4
+#define KEY_PRIO            5
 
 //任务堆栈大小
 #define START_STK_SIZE      128
 #define KEY_STK_SIZE        128
 #define ENVIR_STK_SIZE      128
 #define OLED_STK_SIZE       128
+#define BEEP_STK_SIZE       128
 
 //任务句柄
 static TaskHandle_t AppTaskCreate_Handle;
 static TaskHandle_t ENVIR_Handle;
 static TaskHandle_t OLED_Handle;
 static TaskHandle_t KEY_Handle;
+static TaskHandle_t BEEP_Handle;
 
 u8 temp, humi;
 u8 soil, light;
+
+//报警任务
+static void beep_task(void *pvParameters)
+{
+    while(1)
+    {
+        printf("beep_task Running!!！\r\n");
+        BEEP = !BEEP;
+        LED3 = !LED3;
+        delay_ms(pdMS_TO_TICKS(100));
+    }
+}
 
 //按键检测
 static void key_task(void *pvParameters)
 {
     u8 key;
+    u8 beep_temp = 0;
     while(1)
     {
         printf("key_task Running!!！\r\n");
         key = key_scan();
         switch (key) {
             case KEY0_P:
+                if (beep_temp){
+                    vTaskSuspend(BEEP_Handle);
+                    BEEP = 1;
+                    LED4 = 1;
+                    beep_temp = 0;
+                } else {
+                    vTaskResume(BEEP_Handle);
+                    beep_temp = 1;
+                }
                 break;
             case KEY1_P:
+                Shuibeng = !Shuibeng;
+                LED4 = !LED4;
                 break;
             case KEY2_P:
+                LIGHT = !LIGHT;
+                LED5 = !LED5;
                 break;
             case WK_UP:
                 break;
@@ -120,6 +150,17 @@ void AppTaskCreate(void *pvParameters)
     if (KEY_Handle)
         printf("key_task任务创建成功！\r\n");
 
+    //创建任务4 默认挂起
+    xTaskCreate((TaskFunction_t )beep_task,
+                (const char*    )"beep_task",
+                (uint16_t       )BEEP_STK_SIZE,
+                (void*          )NULL,
+                (UBaseType_t    )BEEP_PRIO,
+                (TaskHandle_t *) &BEEP_Handle);
+    vTaskSuspend(BEEP_Handle);
+    if (BEEP_Handle)
+        printf("beep_task任务创建成功！\r\n");
+
     vTaskDelete(AppTaskCreate_Handle);
     taskEXIT_CRITICAL();
 }
@@ -134,6 +175,7 @@ int main(void)
     PrintfInit(USART1);
     Adc_Init();
     key_init();
+    relay_init();
     OLED_Init();
     OLED_Clear();
     delay_ms(1000);
