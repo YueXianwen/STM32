@@ -201,20 +201,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
  .data          0x00000000        0x0 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .text.TIM2_PWM_Init
-                0x00000000       0x84 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_info    0x00000000      0x654 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_abbrev  0x00000000      0x142 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_loc     0x00000000       0x42 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_aranges
-                0x00000000       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_ranges  0x00000000       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_line    0x00000000      0x2a6 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_str     0x00000000      0x5dc CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .comment       0x00000000       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .debug_frame   0x00000000       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
- .ARM.attributes
-                0x00000000       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
  .text          0x00000000        0x0 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/relay.c.obj
  .data          0x00000000        0x0 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/relay.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/relay.c.obj
@@ -1145,8 +1131,6 @@ Discarded input sections
                 0x00000000      0x200 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .text.TIM_OC1Init
                 0x00000000       0x84 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .text.TIM_OC2Init
-                0x00000000       0x88 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .text.TIM_OC3Init
                 0x00000000       0x84 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .text.TIM_OC4Init
@@ -1233,8 +1217,6 @@ Discarded input sections
                 0x00000000       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .text.TIM_OC1NPolarityConfig
                 0x00000000       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .text.TIM_OC2PolarityConfig
-                0x00000000       0x14 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .text.TIM_OC2NPolarityConfig
                 0x00000000       0x14 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .text.TIM_OC3PolarityConfig
@@ -1737,7 +1719,7 @@ LOAD d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x08000110     0x4458
+.text           0x08000110     0x4580
                 0x08000110                . = ALIGN (0x4)
  *(.text)
  .text          0x08000110       0x5c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
@@ -1834,538 +1816,547 @@ LOAD d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm
  .text.led_init
                 0x08000f30       0x4c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
                 0x08000f30                led_init
+ .text.TIM2_PWM_Init
+                0x08000f7c       0x84 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+                0x08000f7c                TIM2_PWM_Init
  .text.TIM3_Int_Init
-                0x08000f7c       0x5c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
-                0x08000f7c                TIM3_Int_Init
+                0x08001000       0x5c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+                0x08001000                TIM3_Int_Init
  .text.TIM2_IRQHandler
-                0x08000fd8       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
-                0x08000fd8                TIM2_IRQHandler
+                0x0800105c       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+                0x0800105c                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x08001004       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
-                0x08001004                TIM3_IRQHandler
+                0x08001088       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+                0x08001088                TIM3_IRQHandler
  .text.OLED_IIC_Start
-                0x08001030       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080010b4       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .text.OLED_IIC_Stop
-                0x0800104c       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080010d0       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .text.IIC_Wait_Ack
-                0x08001064       0x34 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080010e8       0x34 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .text.Write_IIC_Byte
-                0x08001098       0x50 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x0800111c       0x50 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .text.Write_IIC_Data
-                0x080010e8       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x0800116c       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .text.Write_IIC_Command
-                0x08001108       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x0800118c       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .text.OLED_GPIO_Init
-                0x08001128       0x58 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08001128                OLED_GPIO_Init
+                0x080011ac       0x58 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080011ac                OLED_GPIO_Init
  .text.OLED_WR_Byte
-                0x08001180       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08001180                OLED_WR_Byte
+                0x08001204       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x08001204                OLED_WR_Byte
  .text.OLED_Set_Pos
-                0x08001190       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08001190                OLED_Set_Pos
+                0x08001214       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x08001214                OLED_Set_Pos
  .text.OLED_Clear
-                0x080011b8       0x44 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x080011b8                OLED_Clear
+                0x0800123c       0x44 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x0800123c                OLED_Clear
  .text.OLED_ShowChar
-                0x080011fc       0x64 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x080011fc                OLED_ShowChar
+                0x08001280       0x64 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x08001280                OLED_ShowChar
  .text.oled_pow
-                0x08001260       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08001260                oled_pow
+                0x080012e4       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080012e4                oled_pow
  .text.OLED_ShowNum
-                0x08001278       0x7c CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08001278                OLED_ShowNum
+                0x080012fc       0x7c CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080012fc                OLED_ShowNum
  .text.OLED_ShowString
-                0x080012f4       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x080012f4                OLED_ShowString
+                0x08001378       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x08001378                OLED_ShowString
  .text.OLED_ShowCHinese
-                0x08001324       0x54 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08001324                OLED_ShowCHinese
+                0x080013a8       0x54 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080013a8                OLED_ShowCHinese
  .text.OLED_Init
-                0x08001378       0xdc CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08001378                OLED_Init
+                0x080013fc       0xdc CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x080013fc                OLED_Init
  .text.NVIC_Init
-                0x08001454       0x64 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
-                0x08001454                NVIC_Init
+                0x080014d8       0x64 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+                0x080014d8                NVIC_Init
  .text.SysTick_CLKSourceConfig
-                0x080014b8       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
-                0x080014b8                SysTick_CLKSourceConfig
+                0x0800153c       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+                0x0800153c                SysTick_CLKSourceConfig
  .text.ADC_DeInit
-                0x080014d8       0x64 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x080014d8                ADC_DeInit
+                0x0800155c       0x64 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x0800155c                ADC_DeInit
  .text.ADC_Init
-                0x0800153c       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x0800153c                ADC_Init
- .text.ADC_Cmd  0x08001584       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x08001584                ADC_Cmd
+                0x080015c0       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x080015c0                ADC_Init
+ .text.ADC_Cmd  0x08001608       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x08001608                ADC_Cmd
  .text.ADC_ResetCalibration
-                0x0800159c        0xc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x0800159c                ADC_ResetCalibration
+                0x08001620        0xc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x08001620                ADC_ResetCalibration
  .text.ADC_GetResetCalibrationStatus
-                0x080015a8       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x080015a8                ADC_GetResetCalibrationStatus
+                0x0800162c       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x0800162c                ADC_GetResetCalibrationStatus
  .text.ADC_StartCalibration
-                0x080015b8        0xc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x080015b8                ADC_StartCalibration
+                0x0800163c        0xc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x0800163c                ADC_StartCalibration
  .text.ADC_GetCalibrationStatus
-                0x080015c4       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x080015c4                ADC_GetCalibrationStatus
+                0x08001648       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x08001648                ADC_GetCalibrationStatus
  .text.ADC_SoftwareStartConvCmd
-                0x080015d4       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x080015d4                ADC_SoftwareStartConvCmd
+                0x08001658       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x08001658                ADC_SoftwareStartConvCmd
  .text.ADC_RegularChannelConfig
-                0x080015ec       0x8c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x080015ec                ADC_RegularChannelConfig
+                0x08001670       0x8c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x08001670                ADC_RegularChannelConfig
  .text.ADC_GetConversionValue
-                0x08001678        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x08001678                ADC_GetConversionValue
+                0x080016fc        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x080016fc                ADC_GetConversionValue
  .text.ADC_GetFlagStatus
-                0x08001680       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
-                0x08001680                ADC_GetFlagStatus
+                0x08001704       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x08001704                ADC_GetFlagStatus
  .text.EXTI_Init
-                0x08001690       0x90 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
-                0x08001690                EXTI_Init
+                0x08001714       0x90 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+                0x08001714                EXTI_Init
  .text.EXTI_ClearITPendingBit
-                0x08001720        0xc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
-                0x08001720                EXTI_ClearITPendingBit
+                0x080017a4        0xc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+                0x080017a4                EXTI_ClearITPendingBit
  .text.GPIO_Init
-                0x0800172c       0x9c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
-                0x0800172c                GPIO_Init
+                0x080017b0       0x9c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+                0x080017b0                GPIO_Init
  .text.GPIO_ReadInputDataBit
-                0x080017c8       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
-                0x080017c8                GPIO_ReadInputDataBit
+                0x0800184c       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+                0x0800184c                GPIO_ReadInputDataBit
  .text.GPIO_SetBits
-                0x080017d8        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
-                0x080017d8                GPIO_SetBits
+                0x0800185c        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+                0x0800185c                GPIO_SetBits
  .text.GPIO_EXTILineConfig
-                0x080017dc       0x34 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
-                0x080017dc                GPIO_EXTILineConfig
+                0x08001860       0x34 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+                0x08001860                GPIO_EXTILineConfig
  .text.RCC_ADCCLKConfig
-                0x08001810       0x14 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
-                0x08001810                RCC_ADCCLKConfig
+                0x08001894       0x14 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+                0x08001894                RCC_ADCCLKConfig
  .text.RCC_GetClocksFreq
-                0x08001824       0xbc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
-                0x08001824                RCC_GetClocksFreq
+                0x080018a8       0xbc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+                0x080018a8                RCC_GetClocksFreq
  .text.RCC_APB2PeriphClockCmd
-                0x080018e0       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
-                0x080018e0                RCC_APB2PeriphClockCmd
+                0x08001964       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+                0x08001964                RCC_APB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x080018fc       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
-                0x080018fc                RCC_APB1PeriphClockCmd
+                0x08001980       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+                0x08001980                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphResetCmd
-                0x08001918       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
-                0x08001918                RCC_APB2PeriphResetCmd
+                0x0800199c       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+                0x0800199c                RCC_APB2PeriphResetCmd
  .text.TIM_TimeBaseInit
-                0x08001934       0x94 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
-                0x08001934                TIM_TimeBaseInit
- .text.TIM_Cmd  0x080019c8       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
-                0x080019c8                TIM_Cmd
+                0x080019b8       0x94 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x080019b8                TIM_TimeBaseInit
+ .text.TIM_OC2Init
+                0x08001a4c       0x88 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x08001a4c                TIM_OC2Init
+ .text.TIM_Cmd  0x08001ad4       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x08001ad4                TIM_Cmd
  .text.TIM_ITConfig
-                0x080019e4       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
-                0x080019e4                TIM_ITConfig
+                0x08001af0       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x08001af0                TIM_ITConfig
+ .text.TIM_OC2PolarityConfig
+                0x08001b08       0x14 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x08001b08                TIM_OC2PolarityConfig
  .text.TIM_GetITStatus
-                0x080019fc       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
-                0x080019fc                TIM_GetITStatus
+                0x08001b1c       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x08001b1c                TIM_GetITStatus
  .text.TIM_ClearITPendingBit
-                0x08001a14        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
-                0x08001a14                TIM_ClearITPendingBit
+                0x08001b34        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x08001b34                TIM_ClearITPendingBit
  .text.USART_Init
-                0x08001a1c       0xc8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
-                0x08001a1c                USART_Init
+                0x08001b3c       0xc8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x08001b3c                USART_Init
  .text.USART_Cmd
-                0x08001ae4       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
-                0x08001ae4                USART_Cmd
+                0x08001c04       0x1c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x08001c04                USART_Cmd
  .text.USART_ITConfig
-                0x08001b00       0x38 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
-                0x08001b00                USART_ITConfig
+                0x08001c20       0x38 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x08001c20                USART_ITConfig
  .text.USART_SendData
-                0x08001b38        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
-                0x08001b38                USART_SendData
+                0x08001c58        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x08001c58                USART_SendData
  .text.USART_ReceiveData
-                0x08001b40        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
-                0x08001b40                USART_ReceiveData
+                0x08001c60        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x08001c60                USART_ReceiveData
  .text.USART_GetFlagStatus
-                0x08001b48       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
-                0x08001b48                USART_GetFlagStatus
+                0x08001c68       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x08001c68                USART_GetFlagStatus
  .text.USART_GetITStatus
-                0x08001b58       0x4c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
-                0x08001b58                USART_GetITStatus
+                0x08001c78       0x4c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x08001c78                USART_GetITStatus
  .text.delay_init
-                0x08001ba4       0x3c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
-                0x08001ba4                delay_init
+                0x08001cc4       0x3c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+                0x08001cc4                delay_init
  .text.delay_us
-                0x08001be0       0x3c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
-                0x08001be0                delay_us
+                0x08001d00       0x3c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+                0x08001d00                delay_us
  .text.delay_ms
-                0x08001c1c       0x3c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
-                0x08001c1c                delay_ms
+                0x08001d3c       0x3c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+                0x08001d3c                delay_ms
  .text.PrintfInit
-                0x08001c58       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001c58                PrintfInit
+                0x08001d78       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001d78                PrintfInit
  .text.uart_init
-                0x08001c78       0xa4 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001c78                uart_init
+                0x08001d98       0xa4 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001d98                uart_init
  .text.USART1_IRQHandler
-                0x08001d1c       0x7c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001d1c                USART1_IRQHandler
- .text._isatty  0x08001d98        0xc CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001d98                _isatty
- .text._write   0x08001da4       0x4c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001da4                _write
- .text._close   0x08001df0       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001df0                _close
- .text._lseek   0x08001e00        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001e00                _lseek
- .text._read    0x08001e08       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
-                0x08001e08                _read
+                0x08001e3c       0x7c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001e3c                USART1_IRQHandler
+ .text._isatty  0x08001eb8        0xc CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001eb8                _isatty
+ .text._write   0x08001ec4       0x4c CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001ec4                _write
+ .text._close   0x08001f10       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001f10                _close
+ .text._lseek   0x08001f20        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001f20                _lseek
+ .text._read    0x08001f28       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x08001f28                _read
  .text.Reset_Handler
-                0x08001e30       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
-                0x08001e30                Reset_Handler
+                0x08001f50       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+                0x08001f50                Reset_Handler
  .text.Default_Handler
-                0x08001e78        0x2 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
-                0x08001e78                RTC_Alarm_IRQHandler
-                0x08001e78                TIM1_CC_IRQHandler
-                0x08001e78                PVD_IRQHandler
-                0x08001e78                EXTI3_IRQHandler
-                0x08001e78                I2C2_EV_IRQHandler
-                0x08001e78                ADC1_2_IRQHandler
-                0x08001e78                SPI1_IRQHandler
-                0x08001e78                TAMPER_IRQHandler
-                0x08001e78                DMA1_Channel4_IRQHandler
-                0x08001e78                USART3_IRQHandler
-                0x08001e78                RTC_IRQHandler
-                0x08001e78                DMA1_Channel7_IRQHandler
-                0x08001e78                CAN1_RX1_IRQHandler
-                0x08001e78                TIM4_IRQHandler
-                0x08001e78                I2C1_EV_IRQHandler
-                0x08001e78                DMA1_Channel6_IRQHandler
-                0x08001e78                RCC_IRQHandler
-                0x08001e78                TIM1_TRG_COM_IRQHandler
-                0x08001e78                DMA1_Channel1_IRQHandler
-                0x08001e78                Default_Handler
-                0x08001e78                EXTI15_10_IRQHandler
-                0x08001e78                SPI2_IRQHandler
-                0x08001e78                DMA1_Channel5_IRQHandler
-                0x08001e78                EXTI4_IRQHandler
-                0x08001e78                USB_LP_CAN1_RX0_IRQHandler
-                0x08001e78                USB_HP_CAN1_TX_IRQHandler
-                0x08001e78                DMA1_Channel3_IRQHandler
-                0x08001e78                TIM1_UP_IRQHandler
-                0x08001e78                WWDG_IRQHandler
-                0x08001e78                TIM1_BRK_IRQHandler
-                0x08001e78                EXTI1_IRQHandler
-                0x08001e78                USART2_IRQHandler
-                0x08001e78                I2C2_ER_IRQHandler
-                0x08001e78                DMA1_Channel2_IRQHandler
-                0x08001e78                CAN1_SCE_IRQHandler
-                0x08001e78                FLASH_IRQHandler
-                0x08001e78                I2C1_ER_IRQHandler
-                0x08001e78                USBWakeUp_IRQHandler
- *fill*         0x08001e7a        0x6 
- .text.main     0x08001e80      0x1bc CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
-                0x08001e80                main
+                0x08001f98        0x2 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+                0x08001f98                RTC_Alarm_IRQHandler
+                0x08001f98                TIM1_CC_IRQHandler
+                0x08001f98                PVD_IRQHandler
+                0x08001f98                EXTI3_IRQHandler
+                0x08001f98                I2C2_EV_IRQHandler
+                0x08001f98                ADC1_2_IRQHandler
+                0x08001f98                SPI1_IRQHandler
+                0x08001f98                TAMPER_IRQHandler
+                0x08001f98                DMA1_Channel4_IRQHandler
+                0x08001f98                USART3_IRQHandler
+                0x08001f98                RTC_IRQHandler
+                0x08001f98                DMA1_Channel7_IRQHandler
+                0x08001f98                CAN1_RX1_IRQHandler
+                0x08001f98                TIM4_IRQHandler
+                0x08001f98                I2C1_EV_IRQHandler
+                0x08001f98                DMA1_Channel6_IRQHandler
+                0x08001f98                RCC_IRQHandler
+                0x08001f98                TIM1_TRG_COM_IRQHandler
+                0x08001f98                DMA1_Channel1_IRQHandler
+                0x08001f98                Default_Handler
+                0x08001f98                EXTI15_10_IRQHandler
+                0x08001f98                SPI2_IRQHandler
+                0x08001f98                DMA1_Channel5_IRQHandler
+                0x08001f98                EXTI4_IRQHandler
+                0x08001f98                USB_LP_CAN1_RX0_IRQHandler
+                0x08001f98                USB_HP_CAN1_TX_IRQHandler
+                0x08001f98                DMA1_Channel3_IRQHandler
+                0x08001f98                TIM1_UP_IRQHandler
+                0x08001f98                WWDG_IRQHandler
+                0x08001f98                TIM1_BRK_IRQHandler
+                0x08001f98                EXTI1_IRQHandler
+                0x08001f98                USART2_IRQHandler
+                0x08001f98                I2C2_ER_IRQHandler
+                0x08001f98                DMA1_Channel2_IRQHandler
+                0x08001f98                CAN1_SCE_IRQHandler
+                0x08001f98                FLASH_IRQHandler
+                0x08001f98                I2C1_ER_IRQHandler
+                0x08001f98                USBWakeUp_IRQHandler
+ *fill*         0x08001f9a        0x6 
+ .text.main     0x08001fa0      0x1c4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+                0x08001fa0                main
  .text.NMI_Handler
-                0x0800203c        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x0800203c                NMI_Handler
+                0x08002164        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x08002164                NMI_Handler
  .text.HardFault_Handler
-                0x08002040        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x08002040                HardFault_Handler
+                0x08002168        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x08002168                HardFault_Handler
  .text.MemManage_Handler
-                0x08002044        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x08002044                MemManage_Handler
+                0x0800216c        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x0800216c                MemManage_Handler
  .text.BusFault_Handler
-                0x08002048        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x08002048                BusFault_Handler
+                0x08002170        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x08002170                BusFault_Handler
  .text.UsageFault_Handler
-                0x0800204c        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x0800204c                UsageFault_Handler
+                0x08002174        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x08002174                UsageFault_Handler
  .text.SVC_Handler
-                0x08002050        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x08002050                SVC_Handler
+                0x08002178        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x08002178                SVC_Handler
  .text.DebugMon_Handler
-                0x08002054        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x08002054                DebugMon_Handler
+                0x0800217c        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x0800217c                DebugMon_Handler
  .text.PendSV_Handler
-                0x08002058        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x08002058                PendSV_Handler
+                0x08002180        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x08002180                PendSV_Handler
  .text.SysTick_Handler
-                0x0800205c        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
-                0x0800205c                SysTick_Handler
+                0x08002184        0x4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x08002184                SysTick_Handler
  .text.SetSysClockTo72
-                0x08002060       0xc4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+                0x08002188       0xc4 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
  .text.SetSysClock
-                0x08002124        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+                0x0800224c        0x8 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
  .text.SystemInit
-                0x0800212c       0x50 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
-                0x0800212c                SystemInit
+                0x08002254       0x50 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+                0x08002254                SystemInit
  .text.__libc_init_array
-                0x0800217c       0x4c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x0800217c                __libc_init_array
- .text.memset   0x080021c8       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x080021c8                memset
- .text.__cvt    0x080021d8       0xc0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
-                0x080021d8                __cvt
+                0x080022a4       0x4c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x080022a4                __libc_init_array
+ .text.memset   0x080022f0       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x080022f0                memset
+ .text.__cvt    0x08002300       0xc0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
+                0x08002300                __cvt
  .text.__exponent
-                0x08002298       0x62 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
-                0x08002298                __exponent
- *fill*         0x080022fa        0x2 
+                0x080023c0       0x62 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
+                0x080023c0                __exponent
+ *fill*         0x08002422        0x2 
  .text._printf_float
-                0x080022fc      0x488 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
-                0x080022fc                _printf_float
+                0x08002424      0x488 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
+                0x08002424                _printf_float
  .text._printf_common
-                0x08002784       0xec d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08002784                _printf_common
- .text._puts_r  0x08002870       0xb4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
-                0x08002870                _puts_r
- .text.puts     0x08002924       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
-                0x08002924                puts
- .text.setvbuf  0x08002934      0x154 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-setvbuf.o)
-                0x08002934                setvbuf
+                0x080028ac       0xec d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x080028ac                _printf_common
+ .text._puts_r  0x08002998       0xb4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
+                0x08002998                _puts_r
+ .text.puts     0x08002a4c       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
+                0x08002a4c                puts
+ .text.setvbuf  0x08002a5c      0x154 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-setvbuf.o)
+                0x08002a5c                setvbuf
  .text.__swbuf_r
-                0x08002a88       0xa8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
-                0x08002a88                __swbuf_r
+                0x08002bb0       0xa8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
+                0x08002bb0                __swbuf_r
  .text.__swsetup_r
-                0x08002b30       0xdc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
-                0x08002b30                __swsetup_r
- .text.quorem   0x08002c0c      0x116 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
- *fill*         0x08002d22        0x6 
- .text._dtoa_r  0x08002d28      0xb30 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
-                0x08002d28                _dtoa_r
+                0x08002c58       0xdc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
+                0x08002c58                __swsetup_r
+ .text.quorem   0x08002d34      0x116 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
+ *fill*         0x08002e4a        0x6 
+ .text._dtoa_r  0x08002e50      0xb30 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
+                0x08002e50                _dtoa_r
  .text.__sflush_r
-                0x08003858      0x10c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
-                0x08003858                __sflush_r
+                0x08003980      0x10c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+                0x08003980                __sflush_r
  .text._fflush_r
-                0x08003964       0x54 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
-                0x08003964                _fflush_r
+                0x08003a8c       0x54 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+                0x08003a8c                _fflush_r
  .text._cleanup_r
-                0x080039b8        0xc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x080039b8                _cleanup_r
+                0x08003ae0        0xc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08003ae0                _cleanup_r
  .text.std.isra.0
-                0x080039c4       0x48 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08003aec       0x48 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x08003a0c       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08003a0c                __sfmoreglue
- .text.__sinit  0x08003a38       0x60 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08003a38                __sinit
- .text.__sfp    0x08003a98       0x78 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08003a98                __sfp
+                0x08003b34       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08003b34                __sfmoreglue
+ .text.__sinit  0x08003b60       0x60 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08003b60                __sinit
+ .text.__sfp    0x08003bc0       0x78 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08003bc0                __sfp
  .text._fwalk_reent
-                0x08003b10       0x3c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
-                0x08003b10                _fwalk_reent
+                0x08003c38       0x3c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
+                0x08003c38                _fwalk_reent
  .text._localeconv_r
-                0x08003b4c       0x1c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-localeconv.o)
-                0x08003b4c                _localeconv_r
+                0x08003c74       0x1c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-localeconv.o)
+                0x08003c74                _localeconv_r
  .text.__swhatbuf_r
-                0x08003b68       0x46 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
-                0x08003b68                __swhatbuf_r
- *fill*         0x08003bae        0x2 
+                0x08003c90       0x46 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+                0x08003c90                __swhatbuf_r
+ *fill*         0x08003cd6        0x2 
  .text.__smakebuf_r
-                0x08003bb0       0x78 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
-                0x08003bb0                __smakebuf_r
- .text.malloc   0x08003c28       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
-                0x08003c28                malloc
- .text.memcpy   0x08003c38       0x16 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x08003c38                memcpy
- .text._Balloc  0x08003c4e       0x6a d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003c4e                _Balloc
- .text._Bfree   0x08003cb8       0x2e d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003cb8                _Bfree
+                0x08003cd8       0x78 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+                0x08003cd8                __smakebuf_r
+ .text.malloc   0x08003d50       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+                0x08003d50                malloc
+ .text.memcpy   0x08003d60       0x16 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x08003d60                memcpy
+ .text._Balloc  0x08003d76       0x6a d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08003d76                _Balloc
+ .text._Bfree   0x08003de0       0x2e d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08003de0                _Bfree
  .text.__multadd
-                0x08003ce6       0x76 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003ce6                __multadd
+                0x08003e0e       0x76 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08003e0e                __multadd
  .text.__hi0bits
-                0x08003d5c       0x40 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003d5c                __hi0bits
+                0x08003e84       0x40 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08003e84                __hi0bits
  .text.__lo0bits
-                0x08003d9c       0x5a d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003d9c                __lo0bits
- .text.__i2b    0x08003df6       0x12 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003df6                __i2b
+                0x08003ec4       0x5a d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08003ec4                __lo0bits
+ .text.__i2b    0x08003f1e       0x12 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08003f1e                __i2b
  .text.__multiply
-                0x08003e08      0x120 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003e08                __multiply
+                0x08003f30      0x120 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08003f30                __multiply
  .text.__pow5mult
-                0x08003f28       0x9c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003f28                __pow5mult
+                0x08004050       0x9c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08004050                __pow5mult
  .text.__lshift
-                0x08003fc4       0xa2 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08003fc4                __lshift
- .text.__mcmp   0x08004066       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08004066                __mcmp
- .text.__mdiff  0x0800409e       0xbe d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x0800409e                __mdiff
- .text.__d2b    0x0800415c       0x9c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x0800415c                __d2b
+                0x080040ec       0xa2 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x080040ec                __lshift
+ .text.__mcmp   0x0800418e       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x0800418e                __mcmp
+ .text.__mdiff  0x080041c6       0xbe d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x080041c6                __mdiff
+ .text.__d2b    0x08004284       0x9c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08004284                __d2b
  .text._calloc_r
-                0x080041f8       0x1c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-callocr.o)
-                0x080041f8                _calloc_r
- .text._free_r  0x08004214       0x98 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
-                0x08004214                _free_r
+                0x08004320       0x1c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-callocr.o)
+                0x08004320                _calloc_r
+ .text._free_r  0x0800433c       0x98 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                0x0800433c                _free_r
  .text._malloc_r
-                0x080042ac       0xbc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
-                0x080042ac                _malloc_r
- .text._sbrk_r  0x08004368       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
-                0x08004368                _sbrk_r
- .text.__sread  0x08004388       0x22 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x08004388                __sread
+                0x080043d4       0xbc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x080043d4                _malloc_r
+ .text._sbrk_r  0x08004490       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                0x08004490                _sbrk_r
+ .text.__sread  0x080044b0       0x22 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x080044b0                __sread
  .text.__swrite
-                0x080043aa       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x080043aa                __swrite
- .text.__sseek  0x080043e2       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x080043e2                __sseek
+                0x080044d2       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x080044d2                __swrite
+ .text.__sseek  0x0800450a       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x0800450a                __sseek
  .text.__sclose
-                0x08004406        0x8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x08004406                __sclose
- *fill*         0x0800440e        0x2 
+                0x0800452e        0x8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x0800452e                __sclose
+ *fill*         0x08004536        0x2 
  .text._write_r
-                0x08004410       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
-                0x08004410                _write_r
+                0x08004538       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
+                0x08004538                _write_r
  .text._close_r
-                0x08004434       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
-                0x08004434                _close_r
+                0x0800455c       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
+                0x0800455c                _close_r
  .text._fstat_r
-                0x08004454       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
-                0x08004454                _fstat_r
+                0x0800457c       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
+                0x0800457c                _fstat_r
  .text._isatty_r
-                0x08004478       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
-                0x08004478                _isatty_r
+                0x080045a0       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
+                0x080045a0                _isatty_r
  .text._lseek_r
-                0x08004498       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
-                0x08004498                _lseek_r
+                0x080045c0       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
+                0x080045c0                _lseek_r
  .text.__ascii_mbtowc
-                0x080044bc       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mbtowc_r.o)
-                0x080044bc                __ascii_mbtowc
+                0x080045e4       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mbtowc_r.o)
+                0x080045e4                __ascii_mbtowc
  .text.__malloc_lock
-                0x080044e0        0x2 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
-                0x080044e0                __malloc_lock
+                0x08004608        0x2 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x08004608                __malloc_lock
  .text.__malloc_unlock
-                0x080044e2        0x2 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
-                0x080044e2                __malloc_unlock
- .text._read_r  0x080044e4       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
-                0x080044e4                _read_r
+                0x0800460a        0x2 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x0800460a                __malloc_unlock
+ .text._read_r  0x0800460c       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
+                0x0800460c                _read_r
  .text.__ascii_wctomb
-                0x08004508       0x1a d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wctomb_r.o)
-                0x08004508                __ascii_wctomb
- *fill*         0x08004522        0x2 
- .text._fstat   0x08004524       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(fstat.o)
-                0x08004524                _fstat
- .text._sbrk    0x08004534       0x1c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(sbrk.o)
-                0x08004534                _sbrk
+                0x08004630       0x1a d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wctomb_r.o)
+                0x08004630                __ascii_wctomb
+ *fill*         0x0800464a        0x2 
+ .text._fstat   0x0800464c       0x10 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(fstat.o)
+                0x0800464c                _fstat
+ .text._sbrk    0x0800465c       0x1c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(sbrk.o)
+                0x0800465c                _sbrk
  *(.glue_7)
- .glue_7        0x08004550        0x0 linker stubs
+ .glue_7        0x08004678        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08004550        0x0 linker stubs
+ .glue_7t       0x08004678        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08004550        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x08004678        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(.init)
- .init          0x08004550        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x08004550                _init
- .init          0x08004554        0x8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .init          0x08004678        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x08004678                _init
+ .init          0x0800467c        0x8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
  *(.fini)
- .fini          0x0800455c        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x0800455c                _fini
- .fini          0x08004560        0x8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x08004568                . = ALIGN (0x4)
-                0x08004568                _etext = .
+ .fini          0x08004684        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x08004684                _fini
+ .fini          0x08004688        0x8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x08004690                . = ALIGN (0x4)
+                0x08004690                _etext = .
 
-.vfp11_veneer   0x08004568        0x0
- .vfp11_veneer  0x08004568        0x0 linker stubs
+.vfp11_veneer   0x08004690        0x0
+ .vfp11_veneer  0x08004690        0x0 linker stubs
 
-.v4_bx          0x08004568        0x0
- .v4_bx         0x08004568        0x0 linker stubs
+.v4_bx          0x08004690        0x0
+ .v4_bx         0x08004690        0x0 linker stubs
 
-.iplt           0x08004568        0x0
- .iplt          0x08004568        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.iplt           0x08004690        0x0
+ .iplt          0x08004690        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.rodata         0x08004568      0xac8
-                0x08004568                . = ALIGN (0x4)
+.rodata         0x08004690      0xac8
+                0x08004690                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
- .rodata.F8X16  0x08004568      0x5f0 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08004568                F8X16
- .rodata.Hzk    0x08004b58      0x200 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
-                0x08004b58                Hzk
+ .rodata.F8X16  0x08004690      0x5f0 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x08004690                F8X16
+ .rodata.Hzk    0x08004c80      0x200 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x08004c80                Hzk
  .rodata.str1.4
-                0x08004d58       0x4c CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+                0x08004e80       0x4c CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
                                  0x4a (size before relaxing)
  .rodata._global_impure_ptr
-                0x08004da4        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x08004da4                _global_impure_ptr
+                0x08004ecc        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x08004ecc                _global_impure_ptr
  .rodata.str1.1
-                0x08004da8       0x12 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
+                0x08004ed0       0x12 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
  .rodata.str1.1
-                0x08004dba        0xd d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
+                0x08004ee2        0xd d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
                                   0xf (size before relaxing)
- *fill*         0x08004dc7        0x1 
+ *fill*         0x08004eef        0x1 
  .rodata.__sf_fake_stdin
-                0x08004dc8       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08004dc8                __sf_fake_stdin
+                0x08004ef0       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08004ef0                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x08004de8       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08004de8                __sf_fake_stdout
+                0x08004f10       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08004f10                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x08004e08       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08004e08                __sf_fake_stderr
+                0x08004f30       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08004f30                __sf_fake_stderr
  .rodata.__mprec_tens
-                0x08004e28       0xc8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08004e28                __mprec_tens
+                0x08004f50       0xc8 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08004f50                __mprec_tens
  .rodata.__mprec_bigtens
-                0x08004ef0       0x28 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x08004ef0                __mprec_bigtens
+                0x08005018       0x28 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08005018                __mprec_bigtens
  .rodata.p05.6097
-                0x08004f18        0xc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x08005040        0xc d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
  .rodata.str1.1
-                0x08004f24        0xa d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
+                0x0800504c        0xa d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
                                   0xb (size before relaxing)
  .rodata._ctype_
-                0x08004f2e      0x101 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
-                0x08004f2e                _ctype_
-                0x08005030                . = ALIGN (0x4)
- *fill*         0x0800502f        0x1 
+                0x08005056      0x101 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
+                0x08005056                _ctype_
+                0x08005158                . = ALIGN (0x4)
+ *fill*         0x08005157        0x1 
 
-.rel.dyn        0x08005030        0x0
- .rel.iplt      0x08005030        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.rel.dyn        0x08005158        0x0
+ .rel.iplt      0x08005158        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.ARM.extab      0x08005030        0x0
-                0x08005030                . = ALIGN (0x4)
+.ARM.extab      0x08005158        0x0
+                0x08005158                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08005030                . = ALIGN (0x4)
+                0x08005158                . = ALIGN (0x4)
 
-.ARM            0x08005030        0x0
-                0x08005030                . = ALIGN (0x4)
-                0x08005030                __exidx_start = .
+.ARM            0x08005158        0x0
+                0x08005158                . = ALIGN (0x4)
+                0x08005158                __exidx_start = .
  *(.ARM.exidx*)
-                0x08005030                __exidx_end = .
-                0x08005030                . = ALIGN (0x4)
+                0x08005158                __exidx_end = .
+                0x08005158                . = ALIGN (0x4)
 
-.preinit_array  0x08005030        0x0
-                0x08005030                . = ALIGN (0x4)
-                0x08005030                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x08005158        0x0
+                0x08005158                . = ALIGN (0x4)
+                0x08005158                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08005030                PROVIDE (__preinit_array_end, .)
-                0x08005030                . = ALIGN (0x4)
+                0x08005158                PROVIDE (__preinit_array_end, .)
+                0x08005158                . = ALIGN (0x4)
 
-.init_array     0x08005030        0x4
-                0x08005030                . = ALIGN (0x4)
-                0x08005030                PROVIDE (__init_array_start, .)
+.init_array     0x08005158        0x4
+                0x08005158                . = ALIGN (0x4)
+                0x08005158                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x08005030        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
-                0x08005034                PROVIDE (__init_array_end, .)
-                0x08005034                . = ALIGN (0x4)
+ .init_array    0x08005158        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+                0x0800515c                PROVIDE (__init_array_end, .)
+                0x0800515c                . = ALIGN (0x4)
 
-.fini_array     0x08005034        0x4
-                0x08005034                . = ALIGN (0x4)
+.fini_array     0x0800515c        0x4
+                0x0800515c                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08005034        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x0800515c        0x4 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08005038                . = ALIGN (0x4)
-                0x08005038                _sidata = LOADADDR (.data)
+                0x08005160                . = ALIGN (0x4)
+                0x08005160                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x1ec load address 0x08005038
+.data           0x20000000      0x1ec load address 0x08005160
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2393,14 +2384,14 @@ LOAD d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm
                 0x200001ec                . = ALIGN (0x4)
                 0x200001ec                _edata = .
 
-.jcr            0x200001ec        0x0 load address 0x08005224
+.jcr            0x200001ec        0x0 load address 0x0800534c
  .jcr           0x200001ec        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.igot.plt       0x200001ec        0x0 load address 0x08005224
+.igot.plt       0x200001ec        0x0 load address 0x0800534c
  .igot.plt      0x200001ec        0x0 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
                 0x200001ec                . = ALIGN (0x4)
 
-.bss            0x200001ec      0x108 load address 0x08005224
+.bss            0x200001ec      0x108 load address 0x0800534c
                 0x200001ec                _sbss = .
                 0x200001ec                __bss_start__ = _sbss
  *(.bss)
@@ -2445,7 +2436,7 @@ LOAD d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm
                 0x200002f4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200002f4      0x604 load address 0x08005224
+                0x200002f4      0x604 load address 0x0800534c
                 0x200002f8                . = ALIGN (0x8)
  *fill*         0x200002f4        0x4 
                 0x200002f8                PROVIDE (end, .)
@@ -2481,188 +2472,193 @@ LOAD d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm
  .ARM.attributes
                 0x00000149       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
  .ARM.attributes
-                0x0000017c       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+                0x0000017c       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
  .ARM.attributes
-                0x000001af       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x000001af       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
  .ARM.attributes
-                0x000001e2       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+                0x000001e2       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .ARM.attributes
-                0x00000215       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x00000215       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
  .ARM.attributes
-                0x00000248       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+                0x00000248       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
  .ARM.attributes
-                0x0000027b       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+                0x0000027b       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
  .ARM.attributes
-                0x000002ae       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+                0x000002ae       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
  .ARM.attributes
-                0x000002e1       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x000002e1       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
  .ARM.attributes
-                0x00000314       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x00000314       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .ARM.attributes
-                0x00000347       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+                0x00000347       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
  .ARM.attributes
-                0x0000037a       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x0000037a       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
  .ARM.attributes
-                0x000003ad       0x21 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+                0x000003ad       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
  .ARM.attributes
-                0x000003ce       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+                0x000003e0       0x21 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
  .ARM.attributes
-                0x00000401       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x00000401       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
  .ARM.attributes
-                0x00000434       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+                0x00000434       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
  .ARM.attributes
-                0x00000467       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                0x00000467       0x33 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
  .ARM.attributes
-                0x00000484       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
+                0x0000049a       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x000004a1       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixdfsi.o)
+                0x000004b7       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x000004be       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x000004d4       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixdfsi.o)
  .ARM.attributes
-                0x000004eb       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x000004f1       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000518       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x0000051e       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000545       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
+                0x0000054b       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000572       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000578       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
  .ARM.attributes
-                0x0000059f       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
+                0x000005a5       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x000005cc       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-setvbuf.o)
+                0x000005d2       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
  .ARM.attributes
-                0x000005f9       0x17 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strlen.o)
+                0x000005ff       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-setvbuf.o)
  .ARM.attributes
-                0x00000610       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
+                0x0000062c       0x17 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strlen.o)
  .ARM.attributes
-                0x0000063d       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
+                0x00000643       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
  .ARM.attributes
-                0x0000066a       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
+                0x00000670       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
  .ARM.attributes
-                0x00000697       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+                0x0000069d       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
  .ARM.attributes
-                0x000006c4       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x000006ca       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
  .ARM.attributes
-                0x000006f1       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
+                0x000006f7       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
  .ARM.attributes
-                0x0000071e       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-localeconv.o)
+                0x00000724       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x0000074b       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+                0x00000751       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-localeconv.o)
  .ARM.attributes
-                0x00000778       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+                0x0000077e       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
  .ARM.attributes
-                0x000007a5       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x000007ab       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
  .ARM.attributes
-                0x000007d2       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x000007d8       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x000007ff       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-callocr.o)
+                0x00000805       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
  .ARM.attributes
-                0x0000082c       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                0x00000832       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-callocr.o)
  .ARM.attributes
-                0x00000859       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000085f       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x00000886       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                0x0000088c       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x000008b3       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x000008b9       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x000008e0       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
+                0x000008e6       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
  .ARM.attributes
-                0x0000090d       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
+                0x00000913       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
  .ARM.attributes
-                0x0000093a       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
+                0x00000940       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
  .ARM.attributes
-                0x00000967       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
+                0x0000096d       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
  .ARM.attributes
-                0x00000994       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
+                0x0000099a       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
  .ARM.attributes
-                0x000009c1       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
+                0x000009c7       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
  .ARM.attributes
-                0x000009ee       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mbtowc_r.o)
+                0x000009f4       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
  .ARM.attributes
-                0x00000a1b       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x00000a21       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mbtowc_r.o)
  .ARM.attributes
-                0x00000a48       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
+                0x00000a4e       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x00000a75       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x00000a7b       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
  .ARM.attributes
-                0x00000aa2       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wctomb_r.o)
+                0x00000aa8       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x00000acf       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
+                0x00000ad5       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wctomb_r.o)
  .ARM.attributes
-                0x00000afc       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
+                0x00000b02       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
  .ARM.attributes
-                0x00000b19       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_unorddf2.o)
+                0x00000b2f       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x00000b36       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(fstat.o)
+                0x00000b4c       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
-                0x00000b63       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(sbrk.o)
+                0x00000b69       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(fstat.o)
  .ARM.attributes
-                0x00000b90       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00000b96       0x2d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(sbrk.o)
+ .ARM.attributes
+                0x00000bc3       0x1d d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
 OUTPUT(Intelligent_agriculture.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xa267
+.debug_info     0x00000000     0xa8e2
  .debug_info    0x00000000      0x697 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
  .debug_info    0x00000697      0x253 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/beep.c.obj
  .debug_info    0x000008ea      0x46c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/dht11.c.obj
  .debug_info    0x00000d56      0x83a CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/exti.c.obj
  .debug_info    0x00001590      0x2f4 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/key.c.obj
  .debug_info    0x00001884      0x253 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
- .debug_info    0x00001ad7      0x7b8 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
- .debug_info    0x0000228f      0xe3d CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
- .debug_info    0x000030cc      0x4f8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
- .debug_info    0x000035c4      0xc13 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
- .debug_info    0x000041d7      0x33e CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
- .debug_info    0x00004515      0x879 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
- .debug_info    0x00004d8e      0x8bf CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
- .debug_info    0x0000564d     0x2186 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .debug_info    0x000077d3      0xb0e CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
- .debug_info    0x000082e1      0x1ff CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
- .debug_info    0x000084e0     0x115d CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
- .debug_info    0x0000963d       0xdc CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
- .debug_info    0x00009719      0x5cf CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
- .debug_info    0x00009ce8      0x119 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
- .debug_info    0x00009e01      0x466 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+ .debug_info    0x00001ad7      0x654 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+ .debug_info    0x0000212b      0x7b8 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+ .debug_info    0x000028e3      0xe3d CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+ .debug_info    0x00003720      0x4f8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+ .debug_info    0x00003c18      0xc13 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+ .debug_info    0x0000482b      0x33e CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+ .debug_info    0x00004b69      0x879 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+ .debug_info    0x000053e2      0x8bf CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+ .debug_info    0x00005ca1     0x2186 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+ .debug_info    0x00007e27      0xb0e CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+ .debug_info    0x00008935      0x1ff CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+ .debug_info    0x00008b34     0x115d CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+ .debug_info    0x00009c91       0xdc CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+ .debug_info    0x00009d6d      0x5f6 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+ .debug_info    0x0000a363      0x119 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+ .debug_info    0x0000a47c      0x466 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
 
-.debug_abbrev   0x00000000     0x1f9c
+.debug_abbrev   0x00000000     0x20de
  .debug_abbrev  0x00000000      0x19a CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
  .debug_abbrev  0x0000019a      0x126 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/beep.c.obj
  .debug_abbrev  0x000002c0      0x1c2 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/dht11.c.obj
  .debug_abbrev  0x00000482      0x169 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/exti.c.obj
  .debug_abbrev  0x000005eb      0x160 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/key.c.obj
  .debug_abbrev  0x0000074b      0x126 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
- .debug_abbrev  0x00000871      0x169 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
- .debug_abbrev  0x000009da      0x28c CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
- .debug_abbrev  0x00000c66      0x165 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
- .debug_abbrev  0x00000dcb      0x1e2 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
- .debug_abbrev  0x00000fad      0x164 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
- .debug_abbrev  0x00001111      0x1ed CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
- .debug_abbrev  0x000012fe      0x1e2 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
- .debug_abbrev  0x000014e0      0x1dc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .debug_abbrev  0x000016bc      0x1c6 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
- .debug_abbrev  0x00001882      0x119 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
- .debug_abbrev  0x0000199b      0x2d5 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
- .debug_abbrev  0x00001c70       0x12 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
- .debug_abbrev  0x00001c82      0x128 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
- .debug_abbrev  0x00001daa       0x73 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
- .debug_abbrev  0x00001e1d      0x17f CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+ .debug_abbrev  0x00000871      0x142 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+ .debug_abbrev  0x000009b3      0x169 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+ .debug_abbrev  0x00000b1c      0x28c CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+ .debug_abbrev  0x00000da8      0x165 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+ .debug_abbrev  0x00000f0d      0x1e2 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+ .debug_abbrev  0x000010ef      0x164 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+ .debug_abbrev  0x00001253      0x1ed CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+ .debug_abbrev  0x00001440      0x1e2 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+ .debug_abbrev  0x00001622      0x1dc CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+ .debug_abbrev  0x000017fe      0x1c6 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+ .debug_abbrev  0x000019c4      0x119 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+ .debug_abbrev  0x00001add      0x2d5 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+ .debug_abbrev  0x00001db2       0x12 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+ .debug_abbrev  0x00001dc4      0x128 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+ .debug_abbrev  0x00001eec       0x73 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+ .debug_abbrev  0x00001f5f      0x17f CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
 
-.debug_loc      0x00000000     0x47b9
+.debug_loc      0x00000000     0x47fb
  .debug_loc     0x00000000       0xac CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
  .debug_loc     0x000000ac      0x144 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/dht11.c.obj
- .debug_loc     0x000001f0       0x84 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
- .debug_loc     0x00000274      0x673 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
- .debug_loc     0x000008e7      0x160 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
- .debug_loc     0x00000a47      0xa70 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
- .debug_loc     0x000014b7      0x164 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
- .debug_loc     0x0000161b      0x542 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
- .debug_loc     0x00001b5d      0x692 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
- .debug_loc     0x000021ef     0x1aed CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .debug_loc     0x00003cdc      0x736 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
- .debug_loc     0x00004412       0x68 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
- .debug_loc     0x0000447a      0x260 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
- .debug_loc     0x000046da       0xdf CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+ .debug_loc     0x000001f0       0x42 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+ .debug_loc     0x00000232       0x84 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+ .debug_loc     0x000002b6      0x673 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+ .debug_loc     0x00000929      0x160 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+ .debug_loc     0x00000a89      0xa70 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+ .debug_loc     0x000014f9      0x164 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+ .debug_loc     0x0000165d      0x542 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+ .debug_loc     0x00001b9f      0x692 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+ .debug_loc     0x00002231     0x1aed CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+ .debug_loc     0x00003d1e      0x736 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+ .debug_loc     0x00004454       0x68 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+ .debug_loc     0x000044bc      0x260 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+ .debug_loc     0x0000471c       0xdf CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
 
-.debug_aranges  0x00000000      0xaf0
+.debug_aranges  0x00000000      0xb10
  .debug_aranges
                 0x00000000       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
  .debug_aranges
@@ -2676,83 +2672,87 @@ OUTPUT(Intelligent_agriculture.elf elf32-littlearm)
  .debug_aranges
                 0x000000f8       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
  .debug_aranges
-                0x00000118       0x38 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+                0x00000118       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
  .debug_aranges
-                0x00000150       0xb8 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+                0x00000138       0x38 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
  .debug_aranges
-                0x00000208       0x40 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+                0x00000170       0xb8 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .debug_aranges
-                0x00000248      0x138 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+                0x00000228       0x40 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
  .debug_aranges
-                0x00000380       0x58 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+                0x00000268      0x138 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
  .debug_aranges
-                0x000003d8       0xa8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+                0x000003a0       0x58 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
  .debug_aranges
-                0x00000480      0x118 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+                0x000003f8       0xa8 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
  .debug_aranges
-                0x00000598      0x2f0 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+                0x000004a0      0x118 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
  .debug_aranges
-                0x00000888      0x100 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+                0x000005b8      0x2f0 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
  .debug_aranges
-                0x00000988       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+                0x000008a8      0x100 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
  .debug_aranges
-                0x000009b8       0x58 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+                0x000009a8       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
  .debug_aranges
-                0x00000a10       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+                0x000009d8       0x58 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
  .debug_aranges
-                0x00000a38       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+                0x00000a30       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
  .debug_aranges
-                0x00000a58       0x60 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+                0x00000a58       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
  .debug_aranges
-                0x00000ab8       0x38 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+                0x00000a78       0x60 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+ .debug_aranges
+                0x00000ad8       0x38 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
 
-.debug_ranges   0x00000000      0x9c0
+.debug_ranges   0x00000000      0x9d0
  .debug_ranges  0x00000000       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
  .debug_ranges  0x00000020       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/beep.c.obj
  .debug_ranges  0x00000030       0x38 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/dht11.c.obj
  .debug_ranges  0x00000068       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/exti.c.obj
  .debug_ranges  0x00000090       0x18 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/key.c.obj
  .debug_ranges  0x000000a8       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
- .debug_ranges  0x000000b8       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
- .debug_ranges  0x000000e0       0xa8 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
- .debug_ranges  0x00000188       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
- .debug_ranges  0x000001b8      0x128 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
- .debug_ranges  0x000002e0       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
- .debug_ranges  0x00000328       0x98 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
- .debug_ranges  0x000003c0      0x108 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
- .debug_ranges  0x000004c8      0x2e0 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .debug_ranges  0x000007a8       0xf0 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
- .debug_ranges  0x00000898       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
- .debug_ranges  0x000008b8       0x60 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
- .debug_ranges  0x00000918       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
- .debug_ranges  0x00000938       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
- .debug_ranges  0x00000948       0x50 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
- .debug_ranges  0x00000998       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+ .debug_ranges  0x000000b8       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+ .debug_ranges  0x000000c8       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+ .debug_ranges  0x000000f0       0xa8 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+ .debug_ranges  0x00000198       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+ .debug_ranges  0x000001c8      0x128 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+ .debug_ranges  0x000002f0       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+ .debug_ranges  0x00000338       0x98 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+ .debug_ranges  0x000003d0      0x108 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+ .debug_ranges  0x000004d8      0x2e0 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+ .debug_ranges  0x000007b8       0xf0 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+ .debug_ranges  0x000008a8       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+ .debug_ranges  0x000008c8       0x60 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+ .debug_ranges  0x00000928       0x20 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+ .debug_ranges  0x00000948       0x10 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+ .debug_ranges  0x00000958       0x50 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+ .debug_ranges  0x000009a8       0x28 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
 
-.debug_line     0x00000000     0x4f30
+.debug_line     0x00000000     0x51e0
  .debug_line    0x00000000      0x34d CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
  .debug_line    0x0000034d      0x288 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/beep.c.obj
  .debug_line    0x000005d5      0x3a4 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/dht11.c.obj
  .debug_line    0x00000979      0x3c9 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/exti.c.obj
  .debug_line    0x00000d42      0x328 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/key.c.obj
  .debug_line    0x0000106a      0x28c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
- .debug_line    0x000012f6      0x2d9 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
- .debug_line    0x000015cf      0x55d CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
- .debug_line    0x00001b2c      0x2c5 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
- .debug_line    0x00001df1      0x58c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
- .debug_line    0x0000237d      0x325 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
- .debug_line    0x000026a2      0x43b CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
- .debug_line    0x00002add      0x510 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
- .debug_line    0x00002fed      0xaf9 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .debug_line    0x00003ae6      0x4f4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
- .debug_line    0x00003fda      0x2c0 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
- .debug_line    0x0000429a      0x45e CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
- .debug_line    0x000046f8       0xc1 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
- .debug_line    0x000047b9      0x37b CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
- .debug_line    0x00004b34      0x163 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
- .debug_line    0x00004c97      0x299 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+ .debug_line    0x000012f6      0x2a6 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+ .debug_line    0x0000159c      0x2d9 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+ .debug_line    0x00001875      0x55d CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+ .debug_line    0x00001dd2      0x2c5 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+ .debug_line    0x00002097      0x58c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+ .debug_line    0x00002623      0x325 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+ .debug_line    0x00002948      0x43b CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+ .debug_line    0x00002d83      0x510 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+ .debug_line    0x00003293      0xaf9 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+ .debug_line    0x00003d8c      0x4f4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+ .debug_line    0x00004280      0x2c0 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+ .debug_line    0x00004540      0x45e CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+ .debug_line    0x0000499e       0xc1 CMakeFiles/Intelligent_agriculture.elf.dir/Startup/startup_stm32f103rbtx.s.obj
+ .debug_line    0x00004a5f      0x385 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+ .debug_line    0x00004de4      0x163 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+ .debug_line    0x00004f47      0x299 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
 
-.debug_str      0x00000000     0x343b
+.debug_str      0x00000000     0x34b3
  .debug_str     0x00000000      0x503 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
                                 0x55b (size before relaxing)
  .debug_str     0x00000503       0x61 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/beep.c.obj
@@ -2765,33 +2765,35 @@ OUTPUT(Intelligent_agriculture.elf elf32-littlearm)
                                 0x36c (size before relaxing)
  .debug_str     0x00000da7       0x5f CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
                                 0x341 (size before relaxing)
- .debug_str     0x00000e06      0x1cf CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+ .debug_str     0x00000e06      0x1c9 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+                                0x5dc (size before relaxing)
+ .debug_str     0x00000fcf      0x128 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
                                 0x8e0 (size before relaxing)
- .debug_str     0x00000fd5      0x198 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+ .debug_str     0x000010f7      0x198 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
                                 0x4af (size before relaxing)
- .debug_str     0x0000116d      0x1c5 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+ .debug_str     0x0000128f      0x1c5 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
                                 0x418 (size before relaxing)
- .debug_str     0x00001332      0x3e9 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+ .debug_str     0x00001454      0x3e9 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
                                 0x772 (size before relaxing)
- .debug_str     0x0000171b       0xfd CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+ .debug_str     0x0000183d       0xfd CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
                                 0x3a9 (size before relaxing)
- .debug_str     0x00001818      0x244 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+ .debug_str     0x0000193a      0x244 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
                                 0x590 (size before relaxing)
- .debug_str     0x00001a5c      0x422 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+ .debug_str     0x00001b7e      0x422 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
                                 0x67a (size before relaxing)
- .debug_str     0x00001e7e      0xa39 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+ .debug_str     0x00001fa0      0x98f CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
                                 0xe6b (size before relaxing)
- .debug_str     0x000028b7      0x44e CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+ .debug_str     0x0000292f      0x44e CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
                                 0x730 (size before relaxing)
- .debug_str     0x00002d05       0x7f CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+ .debug_str     0x00002d7d       0x7f CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
                                 0x25f (size before relaxing)
- .debug_str     0x00002d84      0x494 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+ .debug_str     0x00002dfc      0x494 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
                                 0xd84 (size before relaxing)
- .debug_str     0x00003218       0x78 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
-                                0x3af (size before relaxing)
- .debug_str     0x00003290       0xeb CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+ .debug_str     0x00003290       0x78 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+                                0x3bd (size before relaxing)
+ .debug_str     0x00003308       0xeb CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
                                 0x245 (size before relaxing)
- .debug_str     0x0000337b       0xc0 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+ .debug_str     0x000033f3       0xc0 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
                                 0x335 (size before relaxing)
 
 .comment        0x00000000       0x6e
@@ -2802,6 +2804,7 @@ OUTPUT(Intelligent_agriculture.elf elf32-littlearm)
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/exti.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/key.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
+ .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
@@ -2817,62 +2820,63 @@ OUTPUT(Intelligent_agriculture.elf elf32-littlearm)
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
 
-.debug_frame    0x00000000     0x22d4
+.debug_frame    0x00000000     0x2304
  .debug_frame   0x00000000       0x68 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/adc.c.obj
  .debug_frame   0x00000068       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/beep.c.obj
  .debug_frame   0x00000094       0xb8 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/dht11.c.obj
  .debug_frame   0x0000014c       0x7c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/exti.c.obj
  .debug_frame   0x000001c8       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/key.c.obj
  .debug_frame   0x00000210       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/led.c.obj
- .debug_frame   0x0000023c       0x80 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
- .debug_frame   0x000002bc      0x214 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
- .debug_frame   0x000004d0       0x60 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
- .debug_frame   0x00000530      0x294 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
- .debug_frame   0x000007c4       0xa4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
- .debug_frame   0x00000868      0x16c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
- .debug_frame   0x000009d4      0x228 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
- .debug_frame   0x00000bfc      0x6c4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
- .debug_frame   0x000012c0      0x220 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
- .debug_frame   0x000014e0       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
- .debug_frame   0x00001528       0xdc CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
- .debug_frame   0x00001604       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
- .debug_frame   0x00001630       0xa0 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
- .debug_frame   0x000016d0       0x68 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
- .debug_frame   0x00001738       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x00001764       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
- .debug_frame   0x00001784       0x8c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
- .debug_frame   0x00001810       0x60 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00001870       0x3c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
- .debug_frame   0x000018ac       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-setvbuf.o)
- .debug_frame   0x000018e4       0x40 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00001924       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
- .debug_frame   0x00001950       0x6c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
- .debug_frame   0x000019bc       0x68 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
- .debug_frame   0x00001a24      0x11c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x00001b40       0x54 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
- .debug_frame   0x00001b94       0x40 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-localeconv.o)
- .debug_frame   0x00001bd4       0x54 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
- .debug_frame   0x00001c28       0x30 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
- .debug_frame   0x00001c58       0x28 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00001c80      0x234 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
- .debug_frame   0x00001eb4       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-callocr.o)
- .debug_frame   0x00001ee0       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00001f18       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00001f44       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00001f70       0x88 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
- .debug_frame   0x00001ff8       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
- .debug_frame   0x00002024       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
- .debug_frame   0x00002050       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
- .debug_frame   0x0000207c       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
- .debug_frame   0x000020a8       0x88 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
- .debug_frame   0x00002130       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
- .debug_frame   0x0000215c       0x44 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mbtowc_r.o)
- .debug_frame   0x000021a0       0x30 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x000021d0       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
- .debug_frame   0x000021fc       0x5c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
- .debug_frame   0x00002258       0x3c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wctomb_r.o)
- .debug_frame   0x00002294       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(fstat.o)
- .debug_frame   0x000022b4       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(sbrk.o)
+ .debug_frame   0x0000023c       0x30 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/pwm.c.obj
+ .debug_frame   0x0000026c       0x80 CMakeFiles/Intelligent_agriculture.elf.dir/HARDWARE/Src/timer.c.obj
+ .debug_frame   0x000002ec      0x214 CMakeFiles/Intelligent_agriculture.elf.dir/OLED/Src/oled.c.obj
+ .debug_frame   0x00000500       0x60 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/misc.c.obj
+ .debug_frame   0x00000560      0x294 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj
+ .debug_frame   0x000007f4       0xa4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj
+ .debug_frame   0x00000898      0x16c CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj
+ .debug_frame   0x00000a04      0x228 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj
+ .debug_frame   0x00000c2c      0x6c4 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj
+ .debug_frame   0x000012f0      0x220 CMakeFiles/Intelligent_agriculture.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj
+ .debug_frame   0x00001510       0x48 CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/delay.c.obj
+ .debug_frame   0x00001558       0xdc CMakeFiles/Intelligent_agriculture.elf.dir/SYSTEM/Src/usart.c.obj
+ .debug_frame   0x00001634       0x2c CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/main.c.obj
+ .debug_frame   0x00001660       0xa0 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/stm32f10x_it.c.obj
+ .debug_frame   0x00001700       0x68 CMakeFiles/Intelligent_agriculture.elf.dir/USER/Src/system_stm32f10x.c.obj
+ .debug_frame   0x00001768       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001794       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x000017b4       0x8c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
+ .debug_frame   0x00001840       0x60 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x000018a0       0x3c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-puts.o)
+ .debug_frame   0x000018dc       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-setvbuf.o)
+ .debug_frame   0x00001914       0x40 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00001954       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00001980       0x6c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
+ .debug_frame   0x000019ec       0x68 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00001a54      0x11c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00001b70       0x54 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00001bc4       0x40 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-localeconv.o)
+ .debug_frame   0x00001c04       0x54 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00001c58       0x30 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00001c88       0x28 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001cb0      0x234 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+ .debug_frame   0x00001ee4       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-callocr.o)
+ .debug_frame   0x00001f10       0x38 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00001f48       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00001f74       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001fa0       0x88 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00002028       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x00002054       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
+ .debug_frame   0x00002080       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x000020ac       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x000020d8       0x88 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
+ .debug_frame   0x00002160       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x0000218c       0x44 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x000021d0       0x30 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00002200       0x2c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
+ .debug_frame   0x0000222c       0x5c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x00002288       0x3c d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wctomb_r.o)
+ .debug_frame   0x000022c4       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(fstat.o)
+ .debug_frame   0x000022e4       0x20 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(sbrk.o)
 
 .stab           0x00000000       0x24
  .stab          0x00000000       0x24 d:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a(fstat.o)

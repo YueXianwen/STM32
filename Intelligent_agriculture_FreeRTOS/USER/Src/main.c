@@ -32,15 +32,14 @@ static TaskHandle_t OLED_Handle;
 static TaskHandle_t KEY_Handle;
 static TaskHandle_t BEEP_Handle;
 
-u8 temp, humi;
-u8 soil, light;
+u8 temp, humi, soil, light;
 
 //报警任务
 static void beep_task(void *pvParameters)
 {
     while(1)
     {
-        printf("beep_task Running!!！\r\n");
+//        printf("beep_task Running!!！\r\n");
         BEEP = !BEEP;
         LED3 = !LED3;
         delay_ms(pdMS_TO_TICKS(100));
@@ -55,7 +54,7 @@ static void key_task(void *pvParameters)
     LED2= 0;
     while(1)
     {
-        printf("key_task Running!!！\r\n");
+//        printf("key_task Running!!！\r\n");
         key = key_scan();
         switch (key) {
             case KEY0_P:
@@ -70,11 +69,11 @@ static void key_task(void *pvParameters)
                 }
                 break;
             case KEY1_P:
-                Shuibeng = !Shuibeng;
+                LIGHT = !LIGHT;
                 LED4 = !LED4;
                 break;
             case KEY2_P:
-                LIGHT = !LIGHT;
+                Shuibeng = !Shuibeng;
                 LED5 = !LED5;
                 break;
             case WK_UP:
@@ -83,7 +82,7 @@ static void key_task(void *pvParameters)
                 break;
         }
 //        LED2= 1;
-        delay_ms(pdMS_TO_TICKS(10));
+        delay_ms(pdMS_TO_TICKS(50));
     }
 }
 
@@ -94,6 +93,7 @@ static void envir_task(void *pvParameters)
     {
         printf("envir_task Running!!！\r\n");
         DHT11_Read_Data(&temp,&humi);
+        printf("%d    %d\r\n\n",temp,humi);
         soil = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_4, 10)) / 4095));
         light = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_9, 10)) / 4095));
         LED0 = !LED0;
@@ -181,21 +181,22 @@ int main(void)
     OLED_Clear();
     delay_ms(1000);
 
+    while (DHT11_Init()){//DHT11初始化
+        OLED_ShowString(24,2,"DHT11 ERROR!!");
+        delay_ms(100);
+        OLED_Clear();
+        delay_ms(200);
+        printf("DHT11 ERROR!!\r\n");
+    }
+    printf("DHT11 OK!!\r\n");
+
     //OLED
-    OLED_ShowString(16,0,":   C   :   %");
+    OLED_ShowString(16,0,":   '   :   %");
     OLED_ShowString(16,2,":   %   :   H");
     OLED_ShowCHinese(0,0,0);
     OLED_ShowCHinese(64,0,1);
     OLED_ShowCHinese(0,2,2);
     OLED_ShowCHinese(64,2,3);
-
-    while (DHT11_Init()){//DHT11初始化
-        OLED_ShowString(24,2,"DHT11 ERROR!!");
-        delay_ms(200);
-        OLED_Clear();
-        printf("DHT11 ERROR!!\r\n");
-    }
-    printf("DHT11 OK!!\r\n");
 
     printf("正在启动.....\r\n");
     xTaskCreate((TaskFunction_t ) AppTaskCreate,
