@@ -117,12 +117,13 @@ void AppTaskCreate(void *pvParameters)
 int main(void)
 {
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
-    led_init();
-//    key_init();
-    EXTIX_Init();
-    delay_init();
     uart_init(115200);
     PrintfInit(USART1);
+    led_init();
+//    key_init();
+    delay_init();
+    EXTIX_Init();
+
     printf("ÕýÔÚÆô¶¯.....\r\n");
     xTaskCreate((TaskFunction_t ) AppTaskCreate,
                 (const char*    )"AppTaskCreate",

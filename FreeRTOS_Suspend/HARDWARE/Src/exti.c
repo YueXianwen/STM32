@@ -37,8 +37,8 @@ void EXTIX_Init(void){
 	EXTI_Init(&EXTI_InitStructure);
 	
 	NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x02;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x02;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x05;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x05;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 	
@@ -58,8 +58,7 @@ void EXTIX_Init(void){
 
 
 void EXTI0_IRQHandler(void){
-	delay_ms(10);
-    printf("12121");
+	delay_xms(10);
     BaseType_t xYieldRequired;
     if (KEYUP == 1){
         xYieldRequired = xTaskResumeFromISR(LED0_Task_Handle);
