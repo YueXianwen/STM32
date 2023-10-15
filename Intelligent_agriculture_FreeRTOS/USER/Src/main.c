@@ -52,6 +52,7 @@ static void key_task(void *pvParameters)
 {
     u8 key;
     u8 beep_temp = 0;
+    LED2= 0;
     while(1)
     {
         printf("key_task Running!!£¡\r\n");
@@ -81,7 +82,7 @@ static void key_task(void *pvParameters)
             default:
                 break;
         }
-        LED2= !LED2;
+//        LED2= 1;
         delay_ms(pdMS_TO_TICKS(10));
     }
 }
@@ -96,7 +97,7 @@ static void envir_task(void *pvParameters)
         soil = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_4, 10)) / 4095));
         light = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_9, 10)) / 4095));
         LED0 = !LED0;
-        delay_ms(pdMS_TO_TICKS(50));
+        delay_ms(pdMS_TO_TICKS(100));
     }
 }
 
