@@ -55,8 +55,6 @@ build CMakeFiles/test.elf.dir/CORE/Src/core_cm3.c.obj: C_COMPILER__test.2eelf_un
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\CORE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/adc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/adc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\adc.c.obj.d
@@ -64,8 +62,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/adc.c.obj: C_COMPILER__test.2eelf_uns
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/beep.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/beep.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\beep.c.obj.d
@@ -73,8 +69,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/beep.c.obj: C_COMPILER__test.2eelf_un
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/exti.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/exti.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\exti.c.obj.d
@@ -82,8 +76,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/exti.c.obj: C_COMPILER__test.2eelf_un
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/key.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/key.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\key.c.obj.d
@@ -91,8 +83,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/key.c.obj: C_COMPILER__test.2eelf_uns
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/led.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/led.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\led.c.obj.d
@@ -100,8 +90,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/led.c.obj: C_COMPILER__test.2eelf_uns
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/rtc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/rtc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\rtc.c.obj.d
@@ -109,8 +97,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/rtc.c.obj: C_COMPILER__test.2eelf_uns
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/spi.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/spi.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\spi.c.obj.d
@@ -118,8 +104,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/spi.c.obj: C_COMPILER__test.2eelf_uns
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/timer.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/timer.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\timer.c.obj.d
@@ -127,8 +111,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/timer.c.obj: C_COMPILER__test.2eelf_u
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/HARDWARE/Src/w25qxx.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Src/w25qxx.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\HARDWARE\Src\w25qxx.c.obj.d
@@ -136,8 +118,6 @@ build CMakeFiles/test.elf.dir/HARDWARE/Src/w25qxx.c.obj: C_COMPILER__test.2eelf_
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\HARDWARE\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/OLED/Src/oled.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Src/oled.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\OLED\Src\oled.c.obj.d
@@ -145,8 +125,6 @@ build CMakeFiles/test.elf.dir/OLED/Src/oled.c.obj: C_COMPILER__test.2eelf_unscan
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\OLED\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/misc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/misc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\misc.c.obj.d
@@ -154,8 +132,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/misc.c.obj: C_COMPILER__test.2
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_adc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_adc.c.obj.d
@@ -163,8 +139,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_adc.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_bkp.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_bkp.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_bkp.c.obj.d
@@ -172,8 +146,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_bkp.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_can.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_can.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_can.c.obj.d
@@ -181,8 +153,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_can.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_cec.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_cec.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_cec.c.obj.d
@@ -190,8 +160,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_cec.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_crc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_crc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_crc.c.obj.d
@@ -199,8 +167,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_crc.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_dac.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_dac.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_dac.c.obj.d
@@ -208,8 +174,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_dac.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_dbgmcu.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_dbgmcu.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_dbgmcu.c.obj.d
@@ -217,8 +181,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_dbgmcu.c.obj: C_COMP
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_dma.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_dma.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_dma.c.obj.d
@@ -226,8 +188,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_dma.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_exti.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_exti.c.obj.d
@@ -235,8 +195,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_exti.c.obj: C_COMPIL
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_flash.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_flash.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_flash.c.obj.d
@@ -244,8 +202,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_flash.c.obj: C_COMPI
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_fsmc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_fsmc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_fsmc.c.obj.d
@@ -253,8 +209,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_fsmc.c.obj: C_COMPIL
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_gpio.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_gpio.c.obj.d
@@ -262,8 +216,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_gpio.c.obj: C_COMPIL
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_i2c.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_i2c.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_i2c.c.obj.d
@@ -271,8 +223,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_i2c.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_iwdg.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_iwdg.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_iwdg.c.obj.d
@@ -280,8 +230,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_iwdg.c.obj: C_COMPIL
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_pwr.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_pwr.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_pwr.c.obj.d
@@ -289,8 +237,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_pwr.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_rcc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_rcc.c.obj.d
@@ -298,8 +244,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rcc.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rtc.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_rtc.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_rtc.c.obj.d
@@ -307,8 +251,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_rtc.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_sdio.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_sdio.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_sdio.c.obj.d
@@ -316,8 +258,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_sdio.c.obj: C_COMPIL
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_spi.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_spi.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_spi.c.obj.d
@@ -325,8 +265,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_spi.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_tim.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_tim.c.obj.d
@@ -334,8 +272,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_tim.c.obj: C_COMPILE
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_usart.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_usart.c.obj.d
@@ -343,8 +279,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_usart.c.obj: C_COMPI
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_wwdg.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Src/stm32f10x_wwdg.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src\stm32f10x_wwdg.c.obj.d
@@ -352,8 +286,6 @@ build CMakeFiles/test.elf.dir/STM32F10x_FWLib/Src/stm32f10x_wwdg.c.obj: C_COMPIL
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\STM32F10x_FWLib\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/SYSTEM/Src/delay.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Src/delay.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\SYSTEM\Src\delay.c.obj.d
@@ -361,8 +293,6 @@ build CMakeFiles/test.elf.dir/SYSTEM/Src/delay.c.obj: C_COMPILER__test.2eelf_uns
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\SYSTEM\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/SYSTEM/Src/sys.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Src/sys.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\SYSTEM\Src\sys.c.obj.d
@@ -370,8 +300,6 @@ build CMakeFiles/test.elf.dir/SYSTEM/Src/sys.c.obj: C_COMPILER__test.2eelf_unsca
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\SYSTEM\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/SYSTEM/Src/usart.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Src/usart.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\SYSTEM\Src\usart.c.obj.d
@@ -379,8 +307,6 @@ build CMakeFiles/test.elf.dir/SYSTEM/Src/usart.c.obj: C_COMPILER__test.2eelf_uns
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\SYSTEM\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/Startup/startup_stm32f103rbtx.s.obj: ASM_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/Startup/startup_stm32f103rbtx.s || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\Startup\startup_stm32f103rbtx.s.obj.d
@@ -388,8 +314,6 @@ build CMakeFiles/test.elf.dir/Startup/startup_stm32f103rbtx.s.obj: ASM_COMPILER_
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\Startup
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/USER/Src/main.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Src/main.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\USER\Src\main.c.obj.d
@@ -397,8 +321,6 @@ build CMakeFiles/test.elf.dir/USER/Src/main.c.obj: C_COMPILER__test.2eelf_unscan
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\USER\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/USER/Src/stm32f10x_it.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Src/stm32f10x_it.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\USER\Src\stm32f10x_it.c.obj.d
@@ -406,8 +328,6 @@ build CMakeFiles/test.elf.dir/USER/Src/stm32f10x_it.c.obj: C_COMPILER__test.2eel
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\USER\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 build CMakeFiles/test.elf.dir/USER/Src/system_stm32f10x.c.obj: C_COMPILER__test.2eelf_unscanned_Debug D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Src/system_stm32f10x.c || cmake_object_order_depends_target_test.elf
   DEP_FILE = CMakeFiles\test.elf.dir\USER\Src\system_stm32f10x.c.obj.d
@@ -415,8 +335,6 @@ build CMakeFiles/test.elf.dir/USER/Src/system_stm32f10x.c.obj: C_COMPILER__test.
   INCLUDES = -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CORE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/SYSTEM/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/STM32F10x_FWLib/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/USER/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/HARDWARE/Inc -ID:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/OLED/Inc
   OBJECT_DIR = CMakeFiles\test.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\test.elf.dir\USER\Src
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
-  TARGET_PDB = test.elf.pdb
 
 
 # =============================================================================
@@ -432,9 +350,8 @@ build test.elf: C_EXECUTABLE_LINKER__test.2eelf_Debug CMakeFiles/test.elf.dir/CO
   OBJECT_DIR = CMakeFiles\test.elf.dir
   POST_BUILD = cmd.exe /C "cd /D D:\36348\CLionProjects\STM32\STM32F103RBT6\RTC\cmake-build-debug && arm-none-eabi-objcopy -Oihex D:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/cmake-build-debug/test.elf D:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/cmake-build-debug/test.hex && arm-none-eabi-objcopy -Obinary D:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/cmake-build-debug/test.elf D:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/cmake-build-debug/test.bin"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test.elf.dir\
   TARGET_FILE = test.elf
-  TARGET_PDB = test.elf.pdb
+  TARGET_PDB = test.elf.dbg
 
 
 #############################################
@@ -479,14 +396,14 @@ build all: phony test.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CMakeLists.txt D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMCompiler.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineASMCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestASMCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CMakeLists.txt D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CMakeLists.txt D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMCompiler.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineASMCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestASMCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake: phony
+build CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/36348/CLionProjects/STM32/STM32F103RBT6/RTC/CMakeLists.txt D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake: phony
 
 
 #############################################

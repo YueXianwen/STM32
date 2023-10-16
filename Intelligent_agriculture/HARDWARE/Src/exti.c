@@ -3,6 +3,7 @@
 #include "exti.h"
 #include "beep.h"
 #include "led.h"
+#include "relay.h"
 
 void EXTIX_Init(void){
 	
@@ -54,40 +55,37 @@ void EXTIX_Init(void){
 }
 
 
-void EXTI0_IRQHandler(void){
-	
-	delay_ms(10);
-    if(KEY_UP==1){
+//void EXTI0_IRQHandler(void){
+//
+//	delay_ms(10);
+//    if(KEY_UP==1){
+//
+//    }
+//	EXTI_ClearITPendingBit(EXTI_Line0);
+//}
 
-    }
-	EXTI_ClearITPendingBit(EXTI_Line0);
+u8 beeptemp = 0;
+void EXTI9_5_IRQHandler(void){
+	delay_ms(10);
+	if(KEY0==0){
+        LED1 = 1;
+        BEEP = 1;
+        beeptemp = !beeptemp;
+        TIM_Cmd(TIM3, beeptemp);
+        EXTI_ClearITPendingBit(EXTI_Line8);
+	}
+	if(KEY1==0){
+        LIGHT = !LIGHT;
+		LED2 = !LED2;
+		EXTI_ClearITPendingBit(EXTI_Line9);
+	}
 }
 
 void EXTI2_IRQHandler(void){
-	
-	delay_ms(10);
-	if(KEY2==0){
-		LED2 = 0;
-	}
-	EXTI_ClearITPendingBit(EXTI_Line2);
-}
-
-static u8 beeptemp = 1;
-void EXTI9_5_IRQHandler(void){
-	
-	delay_ms(10);
-	if(KEY0==0){
-        if(beeptemp == 1){
-            TIM_Cmd(TIM3, ENABLE);
-            beeptemp = 0;
-        } else if (beeptemp == 0) {
-            TIM_Cmd(TIM3, DISABLE);
-            beeptemp = 1;
-        }
-		EXTI_ClearITPendingBit(EXTI_Line8);
-	}
-	if(KEY1==0){
-		LED1 = 0;
-		EXTI_ClearITPendingBit(EXTI_Line9);
-	}
+    delay_ms(10);
+    if(KEY2==0){
+        Shuibeng = !Shuibeng;
+        LED3 = !LED3;
+    }
+    EXTI_ClearITPendingBit(EXTI_Line2);
 }

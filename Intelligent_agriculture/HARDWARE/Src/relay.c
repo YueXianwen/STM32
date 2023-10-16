@@ -1,7 +1,7 @@
 //
 // Created by 36348 on 2023/9/19.
 //
-#include "stm32f10x.h"
+#include "sys.h"
 #include "relay.h"
 
 void relay_init(void){
@@ -11,5 +11,5 @@ void relay_init(void){
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; //推挽输出
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; //IO 口速度为50MHz
     GPIO_Init(GPIOA, &GPIO_InitStructure);
-    GPIO_SetBits(GPIOA, GPIO_Pin_5 | GPIO_Pin_6);
+//    GPIO_SetBits(GPIOA, GPIO_Pin_5 | GPIO_Pin_6);
 }

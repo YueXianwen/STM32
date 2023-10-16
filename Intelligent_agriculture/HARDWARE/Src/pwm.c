@@ -27,6 +27,7 @@ void TIM2_PWM_Init(u16 arr, u16 psc) {
     TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
     TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
     TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
+
     TIM_OC2Init(TIM2, &TIM_OCInitStructure);
 
     TIM_OC2PolarityConfig(TIM2, TIM_OCPreload_Enable);
@@ -34,3 +35,16 @@ void TIM2_PWM_Init(u16 arr, u16 psc) {
     TIM_Cmd(TIM2, ENABLE);
 }
 
+//TIM_SetCompare2(TIM2, ledR);
+
+static u16 ledR = 0;
+void RGB_PWM1(){
+    ledR = ledR + 100;
+    if (ledR <= 900){
+        TIM_SetCompare2(TIM2,ledR);
+    } else{
+        ledR = 100;
+        TIM_SetCompare2(TIM2,ledR);
+
+    }
+}

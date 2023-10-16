@@ -2,6 +2,7 @@
 #include "timer.h"
 #include "beep.h"
 #include "usart.h"
+#include "led.h"
 
 void TIM2_Int_Init(u16 arr, u16 psc)
 {
@@ -61,5 +62,6 @@ void TIM3_IRQHandler(void)
 	if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET){
 		TIM_ClearITPendingBit(TIM3,TIM_IT_Update);
         BEEP=!BEEP;
+        LED1=!LED1;
 	}	
 }
