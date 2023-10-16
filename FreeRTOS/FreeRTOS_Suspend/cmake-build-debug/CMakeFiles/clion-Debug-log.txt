@@ -1,0 +1,5 @@
+"D:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\36348\CLionProjects\STM32\STM32F103RBT6\FreeRTOS_Suspend -B D:\36348\CLionProjects\STM32\STM32F103RBT6\FreeRTOS_Suspend\cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS_Suspend/cmake-build-debug
