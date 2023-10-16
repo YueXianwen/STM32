@@ -81,7 +81,6 @@ static void key_task(void *pvParameters)
             default:
                 break;
         }
-//        LED2= 1;
         delay_ms(pdMS_TO_TICKS(50));
     }
 }
@@ -141,26 +140,26 @@ void AppTaskCreate(void *pvParameters)
     if (OLED_Handle)
         printf("oled_task任务创建成功！\r\n");
 
-    //创建任务3
-    xTaskCreate((TaskFunction_t )key_task,
-                (const char*    )"key_task",
-                (uint16_t       )KEY_STK_SIZE,
-                (void*          )NULL,
-                (UBaseType_t    )KEY_PRIO,
-                (TaskHandle_t *) &KEY_Handle);
-    if (KEY_Handle)
-        printf("key_task任务创建成功！\r\n");
+//    //创建任务3
+//    xTaskCreate((TaskFunction_t )key_task,
+//                (const char*    )"key_task",
+//                (uint16_t       )KEY_STK_SIZE,
+//                (void*          )NULL,
+//                (UBaseType_t    )KEY_PRIO,
+//                (TaskHandle_t *) &KEY_Handle);
+//    if (KEY_Handle)
+//        printf("key_task任务创建成功！\r\n");
 
-    //创建任务4 默认挂起
-    xTaskCreate((TaskFunction_t )beep_task,
-                (const char*    )"beep_task",
-                (uint16_t       )BEEP_STK_SIZE,
-                (void*          )NULL,
-                (UBaseType_t    )BEEP_PRIO,
-                (TaskHandle_t *) &BEEP_Handle);
-    vTaskSuspend(BEEP_Handle);
-    if (BEEP_Handle)
-        printf("beep_task任务创建成功！\r\n");
+//    //创建任务4 默认挂起
+//    xTaskCreate((TaskFunction_t )beep_task,
+//                (const char*    )"beep_task",
+//                (uint16_t       )BEEP_STK_SIZE,
+//                (void*          )NULL,
+//                (UBaseType_t    )BEEP_PRIO,
+//                (TaskHandle_t *) &BEEP_Handle);
+//    vTaskSuspend(BEEP_Handle);
+//    if (BEEP_Handle)
+//        printf("beep_task任务创建成功！\r\n");
 
     vTaskDelete(AppTaskCreate_Handle);
     taskEXIT_CRITICAL();
@@ -175,8 +174,8 @@ int main(void)
     uart_init(115200);
     PrintfInit(USART1);
     Adc_Init();
-    key_init();
-    relay_init();
+//    key_init();
+//    relay_init();
     OLED_Init();
     OLED_Clear();
     delay_ms(1000);
