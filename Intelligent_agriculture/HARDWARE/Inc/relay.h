@@ -5,8 +5,8 @@
 #ifndef RELAY_RELAY_H
 #define RELAY_RELAY_H
 
-#define LIGHT PAout(5)
-#define Shuibeng PAout(6)
+//#define LIGHT PAout(5)
+#define Shuibeng PAout(5)
 
 void relay_init(void);
 

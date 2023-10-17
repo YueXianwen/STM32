@@ -21,8 +21,16 @@ typedef struct{
     u8 beep_pw;//±¨¾¯×´Ì¬£º0¡¢1
 } myStatus;
 
-void OLED_show();
+void OLED_Show();
 void Read_Data();
 void OLED_Refresh();
+void Control();
+void Beep_Run();
+void Beep_40ms();
+void Auto_Remote();
+
+void Manual_Shuibeng();
+void Manual_Light();
+void Manual_Feng();
 
 #endif //INTELLIGENT_AGRICULTURE_DATA_H

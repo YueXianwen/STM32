@@ -1,10 +1,8 @@
 #include "delay.h"
 #include "key.h"
 #include "exti.h"
-#include "beep.h"
-#include "led.h"
-#include "relay.h"
-#include "pwm.h"
+#include "usart.h"
+#include "data.h"
 
 void EXTIX_Init(void){
 	
@@ -54,10 +52,11 @@ void EXTIX_Init(void){
 	NVIC_Init(&NVIC_InitStructure);
 	
 }
-
+extern u8 Control_PW;
 void EXTI0_IRQHandler(void){
 	delay_ms(10);
-    if(KEY_UP==1){
+    if(KEY_UP==1 && !Control_PW){
+        printf("KEY_UP");
 
     }
 	EXTI_ClearITPendingBit(EXTI_Line0);
@@ -66,19 +65,23 @@ void EXTI0_IRQHandler(void){
 
 void EXTI9_5_IRQHandler(void){
 	delay_ms(10);
-	if(KEY0==0){
-        EXTI_ClearITPendingBit(EXTI_Line8);
+	if(KEY0==0 && !Control_PW){
+        printf("KEY0");
+        Manual_Shuibeng();
 	}
-	if(KEY1==0){
-		LED2 = !LED2;
-		EXTI_ClearITPendingBit(EXTI_Line9);
+	if(KEY1==0 && !Control_PW){
+        printf("KEY1");
+        Manual_Light();
 	}
+    EXTI_ClearITPendingBit(EXTI_Line8);
+    EXTI_ClearITPendingBit(EXTI_Line9);
 }
 
 void EXTI2_IRQHandler(void){
     delay_ms(10);
-    if(KEY2==0){
-        LED3 = !LED3;
+    if(KEY2==0 && !Control_PW){
+        printf("KEY2");
+        Manual_Feng();
     }
     EXTI_ClearITPendingBit(EXTI_Line2);
 }
