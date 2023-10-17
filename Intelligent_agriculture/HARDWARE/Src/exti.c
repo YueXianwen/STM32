@@ -58,23 +58,18 @@ void EXTIX_Init(void){
 void EXTI0_IRQHandler(void){
 	delay_ms(10);
     if(KEY_UP==1){
-        RGB_PWM1();
+
     }
 	EXTI_ClearITPendingBit(EXTI_Line0);
 }
 
-u8 beeptemp = 0;
+
 void EXTI9_5_IRQHandler(void){
 	delay_ms(10);
 	if(KEY0==0){
-        LED1 = 1;
-        BEEP = 1;
-        beeptemp = !beeptemp;
-        TIM_Cmd(TIM3, beeptemp);
         EXTI_ClearITPendingBit(EXTI_Line8);
 	}
 	if(KEY1==0){
-        LIGHT = !LIGHT;
 		LED2 = !LED2;
 		EXTI_ClearITPendingBit(EXTI_Line9);
 	}
@@ -83,7 +78,6 @@ void EXTI9_5_IRQHandler(void){
 void EXTI2_IRQHandler(void){
     delay_ms(10);
     if(KEY2==0){
-        Shuibeng = !Shuibeng;
         LED3 = !LED3;
     }
     EXTI_ClearITPendingBit(EXTI_Line2);

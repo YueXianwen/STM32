@@ -10,74 +10,34 @@
 #include "pwm.h"
 #include "relay.h"
 #include "exti.h"
-
-u8 temp = 0;//实时温度
-u8 humi = 0;//实时空气湿度
-u8 soil = 0;//实时土壤湿度
-u8 light = 0;//实时光照强度
+#include "remote.h"
+#include "data.h"
 
 u8 t = 0;//计数
 
-//初始化
-void init(){
-    uart_init(115200);
-    PrintfInit(USART1);
-    led_init();
-
-    delay_init();
-    Adc_Init();
-    beep_init();
-    EXTIX_Init();
-    relay_init();
-    TIM2_PWM_Init(899, 0);
-    TIM3_Int_Init(999, 7199);
-    LED0 = 1;LED1 = 1;LED2 = 1;LED3 = 1;LED4 = 1;
-    TIM_SetCompare2(TIM2, 0);
-    OLED_Init();
-    OLED_Clear();
-    delay_ms(1000);
-    while (DHT11_Init()){//DHT11初始化
-        OLED_ShowString(24,2,"DHT11 ERROR!!");
-        delay_ms(200);
-        OLED_Clear();
-        printf("DHT11 ERROR!!\r\n");
-    }
-    printf("DHT11 OK!!\r\n");
-}
-
-//OLED初始化
-void show(){
-    OLED_ShowString(32,0,":  '    :  %");
-    OLED_ShowString(32,2,":  %    :  H");
-    OLED_ShowCHinese(0,0,0);
-    OLED_ShowCHinese(16,0,1);
-    OLED_ShowCHinese(64,0,2);
-    OLED_ShowCHinese(80,0,3);
-    OLED_ShowCHinese(0,2,4);
-    OLED_ShowCHinese(16,2,5);
-    OLED_ShowCHinese(64,2,6);
-    OLED_ShowCHinese(80,2,7);
-}
-
-//环境数据获取
-void app1(){
-    DHT11_Read_Data(&temp,&humi);
-    soil = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_4, 10)) / 4095));
-    light = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_9, 10)) / 4095));
-    OLED_ShowNum(40,0,temp,2,16);
-    OLED_ShowNum(102,0,humi,2,16);
-    OLED_ShowNum(40,2,soil,2,16);
-    OLED_ShowNum(102,2,light,2,16);
-}
-
 int main(void)
 {
-    init();
-    show();
+    uart_init(115200);
+    PrintfInit(USART1);
+    delay_init();                   //延时函数初始化
+    led_init();                     //LED初始化
+    beep_init();                    //蜂鸣器初始化
+    Adc_Init();                     //ADC初始化
+    EXTIX_Init();                   //中断初始化
+    relay_init();                   //继电器初始化
+    Remote_Init();                  //红外初始化
+    TIM2_PWM_Init(899, 0);  //PWM初始化
+    OLED_Init();                    //OLED初始化
+    OLED_Clear();                   //OLED清除
+    delay_ms(1000);            //延时1秒
+    DHT11_Init();                   //DHT11初始化
+
+    OLED_show();
+
     while(1) {
-        //OLED显示
         if (t%50 == 0) LED0 = !LED0;
-        if (t%40 == 0) app1();
+        if (t%100 == 0) Read_Data();
+        if (t%10 == 0) OLED_Refresh();
         t++;
         delay_ms(10);
     }

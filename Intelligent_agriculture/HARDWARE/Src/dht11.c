@@ -1,5 +1,7 @@
 #include "dht11.h"
 #include "delay.h"
+#include "usart.h"
+#include "oled.h"
       
 //复位DHT11
 void DHT11_Rst(void)	   
@@ -98,7 +100,7 @@ u8 DHT11_Read_Data(u8 *temp,u8 *humi)
 //初始化DHT11的IO口DQ同时检测DHT11的存在
 //返回1:不存在
 //返回0:存在    	 
-u8 DHT11_Init(void)
+u8 DHT11_Set(void)
 {	 
  	GPIO_InitTypeDef  GPIO_InitStructure;	
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	 
@@ -111,7 +113,18 @@ u8 DHT11_Init(void)
 			    
 	DHT11_Rst(); 
 	return DHT11_Check();
-} 
+}
+
+void DHT11_Init(void){
+    while (DHT11_Set()){//DHT11初始化
+        OLED_ShowString(24,2,"DHT11 ERROR!!");
+        delay_ms(200);
+        OLED_Clear();
+        printf("DHT11 ERROR!!\r\n");
+    }
+    printf("DHT11 OK!!\r\n");
+}
+
 
 
 

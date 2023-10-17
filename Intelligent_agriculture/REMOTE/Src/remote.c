@@ -1,4 +1,4 @@
-#include "../Inc/remote.h"
+#include "remote.h"
 #include "delay.h"
 #include "stdio.h"
 
@@ -55,62 +55,62 @@ u16 Dval;		//下降沿时计数器的值
 u32 RmtRec=0;	//红外接收到的数据	   		    
 u8  RmtCnt=0;	//按键按下的次数	  
 //定时器4中断服务程序	 
-//void TIM3_IRQHandler(void)
-//{
-//	if(TIM_GetITStatus(TIM3,TIM_IT_Update)!=RESET)
-//	{
-//		if(RmtSta&0x80)								//上次有数据被接收到了
-//		{
-//			RmtSta&=~0X10;							//取消上升沿已经被捕获标记
-//			if((RmtSta&0X0F)==0X00)RmtSta|=1<<6;	//标记已经完成一次按键的键值信息采集
-//			if((RmtSta&0X0F)<14)RmtSta++;
-//			else
-//			{
-//				RmtSta&=~(1<<7);					//清空引导标识
-//				RmtSta&=0XF0;						//清空计数器
-//			}
-//		}
-//	}
-//	if(TIM_GetITStatus(TIM3,TIM_IT_CC3)!=RESET)
-//	{
-//		if(RDATA)//上升沿捕获
-//		{
-//  		TIM_OC3PolarityConfig(TIM3,TIM_ICPolarity_Falling);						//CC4P=1	设置为下降沿捕获
-//			TIM_SetCounter(TIM3,0);							//清空定时器值
-//			RmtSta|=0X10;							//标记上升沿已经被捕获
-//		}else //下降沿捕获
-//		{
-//			Dval=TIM_GetCapture3(TIM3);					//读取CCR4也可以清CC4IF标志位
-//  		TIM_OC3PolarityConfig(TIM3,TIM_ICPolarity_Rising);				//CC4P=0	设置为上升沿捕获
-//			if(RmtSta&0X10)							//完成一次高电平捕获
-//			{
-// 				if(RmtSta&0X80)//接收到了引导码
-//				{
-//
-//					if(Dval>300&&Dval<800)			//560为标准值,560us
-//					{
-//						RmtRec<<=1;					//左移一位.
-//						RmtRec|=0;					//接收到0
-//					}else if(Dval>1400&&Dval<1800)	//1680为标准值,1680us
-//					{
-//						RmtRec<<=1;					//左移一位.
-//						RmtRec|=1;					//接收到1
-//					}else if(Dval>2200&&Dval<2600)	//得到按键键值增加的信息 2500为标准值2.5ms
-//					{
-//						RmtCnt++; 					//按键次数增加1次
-//						RmtSta&=0XF0;				//清空计时器
-//					}
-// 				}else if(Dval>4200&&Dval<4700)		//4500为标准值4.5ms
-//				{
-//					RmtSta|=1<<7;					//标记成功接收到了引导码
-//					RmtCnt=0;						//清除按键次数计数器
-//				}
-//			}
-//			RmtSta&=~(1<<4);
-//		}
-//	}
-//	TIM_ClearITPendingBit(TIM3,TIM_IT_Update|TIM_IT_CC3);
-//}
+void TIM3_IRQHandler(void)
+{
+	if(TIM_GetITStatus(TIM3,TIM_IT_Update)!=RESET)
+	{
+		if(RmtSta&0x80)								//上次有数据被接收到了
+		{
+			RmtSta&=~0X10;							//取消上升沿已经被捕获标记
+			if((RmtSta&0X0F)==0X00)RmtSta|=1<<6;	//标记已经完成一次按键的键值信息采集
+			if((RmtSta&0X0F)<14)RmtSta++;
+			else
+			{
+				RmtSta&=~(1<<7);					//清空引导标识
+				RmtSta&=0XF0;						//清空计数器
+			}
+		}
+	}
+	if(TIM_GetITStatus(TIM3,TIM_IT_CC3)!=RESET)
+	{
+		if(RDATA)//上升沿捕获
+		{
+  		TIM_OC3PolarityConfig(TIM3,TIM_ICPolarity_Falling);						//CC4P=1	设置为下降沿捕获
+			TIM_SetCounter(TIM3,0);							//清空定时器值
+			RmtSta|=0X10;							//标记上升沿已经被捕获
+		}else //下降沿捕获
+		{
+			Dval=TIM_GetCapture3(TIM3);					//读取CCR4也可以清CC4IF标志位
+  		TIM_OC3PolarityConfig(TIM3,TIM_ICPolarity_Rising);				//CC4P=0	设置为上升沿捕获
+			if(RmtSta&0X10)							//完成一次高电平捕获
+			{
+ 				if(RmtSta&0X80)//接收到了引导码
+				{
+
+					if(Dval>300&&Dval<800)			//560为标准值,560us
+					{
+						RmtRec<<=1;					//左移一位.
+						RmtRec|=0;					//接收到0
+					}else if(Dval>1400&&Dval<1800)	//1680为标准值,1680us
+					{
+						RmtRec<<=1;					//左移一位.
+						RmtRec|=1;					//接收到1
+					}else if(Dval>2200&&Dval<2600)	//得到按键键值增加的信息 2500为标准值2.5ms
+					{
+						RmtCnt++; 					//按键次数增加1次
+						RmtSta&=0XF0;				//清空计时器
+					}
+ 				}else if(Dval>4200&&Dval<4700)		//4500为标准值4.5ms
+				{
+					RmtSta|=1<<7;					//标记成功接收到了引导码
+					RmtCnt=0;						//清除按键次数计数器
+				}
+			}
+			RmtSta&=~(1<<4);
+		}
+	}
+	TIM_ClearITPendingBit(TIM3,TIM_IT_Update|TIM_IT_CC3);
+}
 
 //处理红外键盘
 //返回值:
@@ -142,42 +142,36 @@ u8 Remote_Scan(void)
 
 u8 key;
 u8 *str=0;
-void remote_deal(void)
+u8 *remote_deal(void)
 {
-		key=Remote_Scan();	
-		if(key)
-		{	 	  
-			switch(key)
-			{
-				case 0:str="ERROR";break;			   
-				case 162:str="POWER";break;	    
-				case 98:str="UP";break;	    
-				case 2:str="PLAY";break;		 
-				case 226:str="ALIENTEK";break;		  
-				case 194:str="RIGHT";break;	   
-				case 34:str="LEFT";break;		  
-				case 224:str="VOL-";break;		  
-				case 168:str="DOWN";break;		   
-				case 144:str="VOL+";break;		    
-				case 104:str="1";break;		  
-				case 152:str="2";break;	   
-				case 176:str="3";break;	    
-				case 48:str="4";break;		    
-				case 24:str="5";break;		    
-				case 122:str="6";break;		  
-				case 16:str="7";break;			   					
-				case 56:str="8";break;	 
-				case 90:str="9";break;
-				case 66:str="0";break;
-				case 82:str="DELETE";break;		 
-			}
-            printf("Signal is %s.\r\n",str);
+    key=Remote_Scan();
+    if(key)
+    {
+        switch(key)
+        {
+            case 0:str="ERROR";break;
+            case 162:str="POWER";break;
+            case 98:str="UP";break;
+            case 2:str="PLAY";break;
+            case 226:str="ALIENTEK";break;
+            case 194:str="RIGHT";break;
+            case 34:str="LEFT";break;
+            case 224:str="VOL-";break;
+            case 168:str="DOWN";break;
+            case 144:str="VOL+";break;
+            case 104:str="1";break;
+            case 152:str="2";break;
+            case 176:str="3";break;
+            case 48:str="4";break;
+            case 24:str="5";break;
+            case 122:str="6";break;
+            case 16:str="7";break;
+            case 56:str="8";break;
+            case 90:str="9";break;
+            case 66:str="0";break;
+            case 82:str="DELETE";break;
         }
+        printf("Signal is %s.\r\n",str);
+    }
+    return str;
 }
-
-
-
-
-
-
-

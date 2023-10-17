@@ -14,7 +14,7 @@
 //任务优先级
 #define START_TASK_PRIO     1
 #define OLED_PRIO           2
-#define ENVIR_PRIO          3
+#define ENVIR_PRIO          6
 #define BEEP_PRIO           4
 #define KEY_PRIO            5
 
@@ -91,8 +91,11 @@ static void envir_task(void *pvParameters)
     while(1)
     {
         printf("envir_task Running!!！\r\n");
+        portENTER_CRITICAL();
         DHT11_Read_Data(&temp,&humi);
         printf("%d    %d\r\n\n",temp,humi);
+        portEXIT_CRITICAL();
+//        printf("%d    %d\r\n\n",temp,humi);
         soil = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_4, 10)) / 4095));
         light = (int )(100-(100*((double )Get_Adc_Average(ADC_Channel_9, 10)) / 4095));
         LED0 = !LED0;

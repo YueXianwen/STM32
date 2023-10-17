@@ -49,19 +49,19 @@ void TIM3_Int_Init(u16 arr, u16 psc)
 
 }
 
-void TIM2_IRQHandler(void)
-{
-    if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET){
-        TIM_ClearITPendingBit(TIM2,TIM_IT_Update);
-        BEEP=!BEEP;
-    }
-}
+//void TIM2_IRQHandler(void)
+//{
+//    if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET){
+//        TIM_ClearITPendingBit(TIM2,TIM_IT_Update);
+//        BEEP=!BEEP;
+//    }
+//}
 
-void TIM3_IRQHandler(void)
-{
-	if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET){
-		TIM_ClearITPendingBit(TIM3,TIM_IT_Update);
-        BEEP=!BEEP;
-        LED1=!LED1;
-	}	
-}
+//void TIM3_IRQHandler(void)
+//{
+//	if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET){
+//		TIM_ClearITPendingBit(TIM3,TIM_IT_Update);
+//        BEEP=!BEEP;
+//        LED1=!LED1;
+//	}
+//}

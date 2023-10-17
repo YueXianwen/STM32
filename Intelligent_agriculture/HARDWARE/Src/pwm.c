@@ -33,9 +33,9 @@ void TIM2_PWM_Init(u16 arr, u16 psc) {
     TIM_OC2PolarityConfig(TIM2, TIM_OCPreload_Enable);
 
     TIM_Cmd(TIM2, ENABLE);
-}
 
-//TIM_SetCompare2(TIM2, ledR);
+    TIM_SetCompare2(TIM2, 0);
+}
 
 static u16 ledR = 400;
 void RGB_PWM1(){

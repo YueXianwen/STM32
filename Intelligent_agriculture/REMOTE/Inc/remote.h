@@ -11,7 +11,7 @@
 void Remote_Init(void);    	//红外传感器接收头引脚初始化
 u8 Remote_Scan(void);	
 
-void remote_deal(void);
+u8 *remote_deal(void);
 
 #endif  
 
