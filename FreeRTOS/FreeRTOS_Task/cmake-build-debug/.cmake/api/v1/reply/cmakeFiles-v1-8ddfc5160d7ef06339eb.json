@@ -1187,8 +1187,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/cmake-build-debug",
-		"source" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS"
+		"build" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/cmake-build-debug",
+		"source" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task"
 	},
 	"version" : 
 	{

@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/cmake-build-debug"
+			"value" : "d:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS"
+			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/cmake-build-debug"
+			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/cmake-build-debug"
 		},
 		{
 			"name" : "RTOS_IS_TOP_LEVEL",
@@ -1179,7 +1179,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS"
+			"value" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task"
 		}
 	],
 	"kind" : "cache",

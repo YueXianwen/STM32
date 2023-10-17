@@ -135,31 +135,31 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/CORE/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/CORE/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/SYSTEM/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/SYSTEM/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/STM32F10x_FWLib/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/STM32F10x_FWLib/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/USER/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/USER/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/HARDWARE/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/HARDWARE/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS/port/RVDS/ARM_CM3"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/FreeRTOS/port/RVDS/ARM_CM3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS/include"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/FreeRTOS/include"
 				}
 			],
 			"language" : "C",
@@ -269,31 +269,31 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/CORE/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/CORE/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/SYSTEM/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/SYSTEM/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/STM32F10x_FWLib/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/STM32F10x_FWLib/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/USER/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/USER/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/HARDWARE/Inc"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/HARDWARE/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS/port/RVDS/ARM_CM3"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/FreeRTOS/port/RVDS/ARM_CM3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS/include"
+					"path" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/FreeRTOS/include"
 				}
 			],
 			"language" : "ASM",
@@ -318,7 +318,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/cmake-build-debug/RTOS.map",
+				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/cmake-build-debug/RTOS.map",
 				"role" : "flags"
 			},
 			{
@@ -343,7 +343,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/STM32F103RBTX_FLASH.ld",
+				"fragment" : "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/STM32F103RBTX_FLASH.ld",
 				"role" : "flags"
 			},
 			{

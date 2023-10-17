@@ -15,8 +15,6 @@ u8 temp = 0;//实时温度
 u8 humi = 0;//实时空气湿度
 u8 soil = 0;//实时土壤湿度
 u8 light = 0;//实时光照强度
-u8 pwm = 0;//风扇风速
-u8 pwmpw = 0;//风扇标志位
 
 u8 t = 0;//计数
 
@@ -25,14 +23,16 @@ void init(){
     uart_init(115200);
     PrintfInit(USART1);
     led_init();
+
     delay_init();
     Adc_Init();
     beep_init();
     EXTIX_Init();
     relay_init();
     TIM2_PWM_Init(899, 0);
-    TIM3_Int_Init(9999, 7199);
+    TIM3_Int_Init(999, 7199);
     LED0 = 1;LED1 = 1;LED2 = 1;LED3 = 1;LED4 = 1;
+    TIM_SetCompare2(TIM2, 0);
     OLED_Init();
     OLED_Clear();
     delay_ms(1000);
@@ -78,7 +78,6 @@ int main(void)
         //OLED显示
         if (t%50 == 0) LED0 = !LED0;
         if (t%40 == 0) app1();
-        if (t%100 == 0)RGB_PWM1();
         t++;
         delay_ms(10);
     }

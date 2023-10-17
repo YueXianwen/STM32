@@ -4,6 +4,7 @@
 #include "beep.h"
 #include "led.h"
 #include "relay.h"
+#include "pwm.h"
 
 void EXTIX_Init(void){
 	
@@ -54,15 +55,13 @@ void EXTIX_Init(void){
 	
 }
 
-
-//void EXTI0_IRQHandler(void){
-//
-//	delay_ms(10);
-//    if(KEY_UP==1){
-//
-//    }
-//	EXTI_ClearITPendingBit(EXTI_Line0);
-//}
+void EXTI0_IRQHandler(void){
+	delay_ms(10);
+    if(KEY_UP==1){
+        RGB_PWM1();
+    }
+	EXTI_ClearITPendingBit(EXTI_Line0);
+}
 
 u8 beeptemp = 0;
 void EXTI9_5_IRQHandler(void){

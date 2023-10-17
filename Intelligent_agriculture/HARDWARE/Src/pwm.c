@@ -37,14 +37,14 @@ void TIM2_PWM_Init(u16 arr, u16 psc) {
 
 //TIM_SetCompare2(TIM2, ledR);
 
-static u16 ledR = 0;
+static u16 ledR = 400;
 void RGB_PWM1(){
-    ledR = ledR + 100;
-    if (ledR <= 900){
+    if (ledR < 900){
+        ledR = ledR + 100;
         TIM_SetCompare2(TIM2,ledR);
     } else{
-        ledR = 100;
+        ledR = 0;
         TIM_SetCompare2(TIM2,ledR);
-
+        ledR = 400;
     }
 }

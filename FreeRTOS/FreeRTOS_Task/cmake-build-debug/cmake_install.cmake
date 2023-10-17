@@ -1,4 +1,4 @@
-# Install script for directory: D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS
+# Install script for directory: D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/36348/CLionProjects/STM32/STM32F103RBT6/FreeRTOS/FreeRTOS_Task/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
