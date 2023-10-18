@@ -12,18 +12,32 @@
 #include "beep.h"
 #include "led.h"
 #include "remote.h"
+#include "connect.h"
 
 myData nowData;
 myStatus nowStatus;
-
-//自动控制标志位
-u8 Control_PW = 0;
 
 //红外连按标志位
 static u8 down_long = 1;
 
 //红外接受的数据
 u8 remote_num;
+
+//固定报头及缓存区
+char format[]="{\"ack\":\"1\",\"method\":\"thing.event.property.post\",\"id\":\"203302322\",\"params\":{%s},\"version\":\"1.0.0\"}";
+char temp_buf[150];
+char temp[1536];
+
+//OLED开始界面
+void OLED_Start(){
+    OLED_Clear();
+    OLED_ShowString(32,0,":  '    :  %");
+    OLED_ShowString(32,2,":  %    :  H");
+    OLED_ShowString(32,4,":       :");
+    OLED_ShowString(32,6,":");
+    OLED_ShowCHinese(0,0,0);    //温
+    OLED_ShowCHinese(16,0,1);   //度
+}
 
 /*
  *      温度：XX'湿度：XX%
@@ -33,22 +47,26 @@ u8 remote_num;
  */
 //OLED初始化界面
 void OLED_Show(){
+    OLED_Clear();
     OLED_ShowString(32,0,":  '    :  %");
     OLED_ShowString(32,2,":  %    :  H");
     OLED_ShowString(32,4,":       :");
     OLED_ShowString(32,6,":");
     OLED_ShowCHinese(0,0,0);    //温
     OLED_ShowCHinese(16,0,1);   //度
+
     OLED_ShowCHinese(64,0,2);   //湿
     OLED_ShowCHinese(80,0,3);   //度
 
     OLED_ShowCHinese(0,2,6);    //光
     OLED_ShowCHinese(16,2,7);   //照
+
     OLED_ShowCHinese(64,2,4);   //土
     OLED_ShowCHinese(80,2,5);   //壤
 
     OLED_ShowCHinese(0,4,8);    //水
     OLED_ShowCHinese(16,4,9);   //泵
+
     OLED_ShowCHinese(64,4,10);  //补
     OLED_ShowCHinese(80,4,11);  //光
 
@@ -74,7 +92,7 @@ void OLED_Refresh(){
     } else{
         OLED_ShowCHinese(40,4,14);
     }
-    switch (nowStatus.light_pw) {
+    switch (nowStatus.light_num) {
         case 0:
             OLED_ShowCHinese(104,4,15);
             break;
@@ -106,7 +124,7 @@ void OLED_Refresh(){
         default:
             break;
     }
-    if (Control_PW){
+    if (nowStatus.Control_PW){
         OLED_ShowCHinese(60,6,27);
         OLED_ShowCHinese(76,6,28);
     } else{
@@ -155,13 +173,13 @@ void Control(){
     }
     //光照
     if (nowData.light >= 40){
-        nowStatus.light_pw = 0;
+        nowStatus.light_num = 0;
     } else if (nowData.light < 40 && nowData.light >= 30){
-        nowStatus.light_pw = 1;
+        nowStatus.light_num = 1;
     } else if (nowData.light < 30 && nowData.light >= 20){
-        nowStatus.light_pw = 2;
+        nowStatus.light_num = 2;
     } else if (nowData.light < 20){
-        nowStatus.light_pw = 3;
+        nowStatus.light_num = 3;
     }
     //报警
     if (nowData.temp <= 28 && nowData.soil >= 40){
@@ -171,8 +189,8 @@ void Control(){
     }
     LED2 = !nowStatus.pump_pw;
     Shuibeng = nowStatus.pump_pw;
-    LED3 = (nowStatus.light_pw?0:1);
-    Light_PWM(nowStatus.light_pw);
+    LED3 = (nowStatus.light_num?0:1);
+    Light_PWM(nowStatus.light_num);
     LED4 = (nowStatus.feng_num?0:1);
     Feng_PWM(nowStatus.feng_num);
 }
@@ -206,19 +224,9 @@ void Auto_Remote(){
     }
     //ALIENTEK：自动控制
     if (remote_num == 226){
-        Control_PW = !Control_PW;
-        LED7 = !LED7;
-        //所有设备初始化
-        LED2 = 1;LED3 = 1;LED4 = 1;Shuibeng = 0;
-        nowStatus.pump_pw = 0;
-        nowStatus.light_pw = 0;
-        nowStatus.feng_num = 0;
-        nowStatus.beep_pw = 0;
-        Light_PWM(0);
-        Feng_PWM(0);
-        Beep_40ms();
+        Cut_Control();
     }
-    if (!Control_PW){
+    if (!nowStatus.Control_PW){
         switch (remote_num) {
             case 0:
                 break;
@@ -260,6 +268,7 @@ void Auto_Remote(){
             case 90:
                 break;
             case 66:
+                Manual_Beep();
                 break;
             case 82:
                 break;
@@ -280,9 +289,9 @@ void Manual_Shuibeng(){
 
 //手动补光
 void Manual_Light(){
-    LED3 = (++nowStatus.light_pw!=4?0:1);
-    Light_PWM((nowStatus.light_pw==4?0:nowStatus.light_pw));
-    if (nowStatus.light_pw == 4) nowStatus.light_pw = 0;
+    LED3 = (++nowStatus.light_num!=4?0:1);
+    Light_PWM((nowStatus.light_num==4?0:nowStatus.light_num));
+    if (nowStatus.light_num == 4) nowStatus.light_num = 0;
     Beep_40ms();
 }
 
@@ -294,4 +303,87 @@ void Manual_Feng(){
     Beep_40ms();
 }
 
+//手动报警
+void Manual_Beep(){
+    nowStatus.beep_pw = !nowStatus.beep_pw;
+}
 
+//手动自动切换
+void Cut_Control(){
+    nowStatus.Control_PW = !nowStatus.Control_PW;
+    LED7 = !LED7;
+    //所有设备初始化
+    LED2 = 1;LED3 = 1;LED4 = 1;Shuibeng = 0;
+    nowStatus.pump_pw = 0;
+    nowStatus.light_num = 0;
+    nowStatus.feng_num = 0;
+    nowStatus.beep_pw = 0;
+    Light_PWM(0);
+    Feng_PWM(0);
+    Beep_40ms();
+}
+
+//发布消息报文
+void Publish_Trans(){
+    sprintf(temp_buf, "\"temp\":%d,\"humi\":%d,\"soil\":%d,\"light\":%d,\"pump_pw\":%d,\"light_num\":%d,\"feng_num\":%d,\"beep_pw\":%d,\"Control_PW\":%d", nowData.temp, nowData.humi, nowData.soil, nowData.light, nowStatus.pump_pw, nowStatus.light_num, nowStatus.feng_num, nowStatus.beep_pw, nowStatus.Control_PW);
+    sprintf(temp,format,temp_buf);
+    MQTT_PublishQs0(P_TOPIC_NAME,temp, strlen(temp));
+}
+
+//分析接收报文
+void Analysis_Subs(){
+    if (nowStatus.Control_PW == 0){
+        //水泵
+        if(strstr((char *)MQTT_CMDOutPtr+2,"\"pump_pw\":0")){
+            nowStatus.pump_pw = 1;
+            Manual_Shuibeng();
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"pump_pw\":1")) {
+            nowStatus.pump_pw = 0;
+            Manual_Shuibeng();
+        }
+        //补光灯
+        if(strstr((char *)MQTT_CMDOutPtr+2,"\"light_num\":0")){
+            nowStatus.light_num = 3;
+            Manual_Light();
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"light_num\":1")){
+            nowStatus.light_num = 0;
+            Manual_Light();
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"light_num\":2")){
+            nowStatus.light_num = 1;
+            Manual_Light();
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"light_num\":3")){
+            nowStatus.light_num = 2;
+            Manual_Light();
+        }
+        //风扇
+        if(strstr((char *)MQTT_CMDOutPtr+2,"\"feng_num\":0")){
+            nowStatus.feng_num = 3;
+            Manual_Feng();
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"feng_num\":1")){
+            nowStatus.feng_num = 0;
+            Manual_Feng();
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"feng_num\":2")){
+            nowStatus.feng_num = 1;
+            Manual_Feng();
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"feng_num\":3")){
+            nowStatus.feng_num = 2;
+            Manual_Feng();
+        }
+        //报警
+        if(strstr((char *)MQTT_CMDOutPtr+2,"\"beep_pw\":0")){
+            nowStatus.beep_pw = 0;
+        }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"beep_pw\":1")){
+            nowStatus.beep_pw = 1;
+        }
+    }
+    //自动化
+    if(strstr((char *)MQTT_CMDOutPtr+2,"\"Control_PW\":0")){
+        nowStatus.Control_PW = 1;
+        LED7 = 0;
+        Cut_Control();
+    }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"Control_PW\":1")){
+        nowStatus.Control_PW = 0;
+        LED7 = 1;
+        Cut_Control();
+    }
+}

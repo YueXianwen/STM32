@@ -11,11 +11,11 @@
 #include "exti.h"
 #include "remote.h"
 #include "data.h"
+#include "connect.h"
 
 u8 t = 0;//计数
 extern myData nowData;
 extern myStatus nowStatus;
-extern u8 Control_PW;
 
 int main(void)
 {
@@ -33,17 +33,20 @@ int main(void)
     OLED_Clear();                   //OLED清除
     delay_ms(1000);            //延时1秒
     DHT11_Init();                   //DHT11初始化
+    Alink_Init();                   //Alink初始化
 
     OLED_Show();
     Beep_40ms();
 
     while(1) {
         if (t%50 == 0) LED0 = !LED0;
-        if (t%100 == 0) Read_Data();                            //数据读取
-        if (t%50 == 0 && Control_PW == 1) Control();            //自动控制
-        if (t%10 == 0) Beep_Run();                              //报警处理
-        if (Remote_Scan()) Auto_Remote();                       //红外处理
-        if (t%10 == 0) OLED_Refresh();                          //OLED刷新
+        if (t%2 == 0) connect_deal();                               //连接处理
+        if (t%100 == 0) Read_Data();                                //数据读取
+        if (t%50 == 0 && nowStatus.Control_PW == 1) Control();      //自动控制
+        if (t%10 == 0) Beep_Run();                                  //报警处理
+        if (Remote_Scan()) Auto_Remote();                           //红外处理
+        if (t%10 == 0) OLED_Refresh();                              //OLED刷新
+        if (t%100 == 0 && ConnectPack_flag == 1) Publish_Trans();   //发布消息报文
         t++;
         delay_ms(10);
     }

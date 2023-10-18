@@ -52,12 +52,13 @@ void EXTIX_Init(void){
 	NVIC_Init(&NVIC_InitStructure);
 	
 }
-extern u8 Control_PW;
+
+extern myStatus nowStatus;
 void EXTI0_IRQHandler(void){
 	delay_ms(10);
-    if(KEY_UP==1 && !Control_PW){
+    if(KEY_UP==1 && !nowStatus.Control_PW){
         printf("KEY_UP");
-
+        Manual_Beep();
     }
 	EXTI_ClearITPendingBit(EXTI_Line0);
 }
@@ -65,11 +66,11 @@ void EXTI0_IRQHandler(void){
 
 void EXTI9_5_IRQHandler(void){
 	delay_ms(10);
-	if(KEY0==0 && !Control_PW){
+	if(KEY0==0 && !nowStatus.Control_PW){
         printf("KEY0");
         Manual_Shuibeng();
 	}
-	if(KEY1==0 && !Control_PW){
+	if(KEY1==0 && !nowStatus.Control_PW){
         printf("KEY1");
         Manual_Light();
 	}
@@ -79,7 +80,7 @@ void EXTI9_5_IRQHandler(void){
 
 void EXTI2_IRQHandler(void){
     delay_ms(10);
-    if(KEY2==0 && !Control_PW){
+    if(KEY2==0 && !nowStatus.Control_PW){
         printf("KEY2");
         Manual_Feng();
     }
