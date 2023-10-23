@@ -24,6 +24,9 @@ static u8 down_long = 1;
 //红外接受的数据
 u8 remote_num;
 
+//OLED初始化标志位
+u8 OLED_show_ok = 0;
+
 //固定报头及缓存区
 char format[]="{\"ack\":\"1\",\"method\":\"thing.event.property.post\",\"id\":\"203302322\",\"params\":{%s},\"version\":\"1.0.0\"}";
 char temp_buf[150];
@@ -31,13 +34,18 @@ char temp[1536];
 
 //OLED开始界面
 void OLED_Start(){
-    OLED_Clear();
-    OLED_ShowString(32,0,":  '    :  %");
-    OLED_ShowString(32,2,":  %    :  H");
-    OLED_ShowString(32,4,":       :");
-    OLED_ShowString(32,6,":");
-    OLED_ShowCHinese(0,0,0);    //温
-    OLED_ShowCHinese(16,0,1);   //度
+    OLED_ShowChinese_big(4,0,0);        //智
+    OLED_ShowChinese_big(36,0,1);       //慧
+    OLED_ShowChinese_big(68,0,2);       //农
+    OLED_ShowChinese_big(100,0,3);      //业
+    OLED_ShowChinese_big(16,3,6);       //正
+    OLED_ShowChinese_big(40,3,7);       //在
+    OLED_ShowChinese_big(64,3,8);       //启
+    OLED_ShowChinese_big(88,3,9);       //动
+    OLED_ShowString(12,6,"WIFI      ....");
+    OLED_ShowChinese(44,6,32);          //连
+    OLED_ShowChinese(60,6,33);          //接
+    OLED_ShowChinese(76,6,34);          //中
 }
 
 /*
@@ -53,26 +61,20 @@ void OLED_Show(){
     OLED_ShowString(32,2,":  %    :  H");
     OLED_ShowString(32,4,":       :");
     OLED_ShowString(32,6,":");
-    OLED_ShowCHinese(0,0,0);    //温
-    OLED_ShowCHinese(16,0,1);   //度
-
-    OLED_ShowCHinese(64,0,2);   //湿
-    OLED_ShowCHinese(80,0,3);   //度
-
-    OLED_ShowCHinese(0,2,6);    //光
-    OLED_ShowCHinese(16,2,7);   //照
-
-    OLED_ShowCHinese(64,2,4);   //土
-    OLED_ShowCHinese(80,2,5);   //壤
-
-    OLED_ShowCHinese(0,4,8);    //水
-    OLED_ShowCHinese(16,4,9);   //泵
-
-    OLED_ShowCHinese(64,4,10);  //补
-    OLED_ShowCHinese(80,4,11);  //光
-
-    OLED_ShowCHinese(0,6,12);   //风
-    OLED_ShowCHinese(16,6,13);  //扇
+    OLED_ShowChinese(0,0,0);    //温
+    OLED_ShowChinese(16,0,1);   //度
+    OLED_ShowChinese(64,0,2);   //湿
+    OLED_ShowChinese(80,0,3);   //度
+    OLED_ShowChinese(0,2,6);    //光
+    OLED_ShowChinese(16,2,7);   //照
+    OLED_ShowChinese(64,2,4);   //土
+    OLED_ShowChinese(80,2,5);   //壤
+    OLED_ShowChinese(0,4,8);    //水
+    OLED_ShowChinese(16,4,9);   //泵
+    OLED_ShowChinese(64,4,10);  //补
+    OLED_ShowChinese(80,4,11);  //光
+    OLED_ShowChinese(0,6,12);   //风
+    OLED_ShowChinese(16,6,13);  //扇
 }
 
 //环境数据获取
@@ -84,6 +86,20 @@ void Read_Data(){
 
 //OLED实时刷新
 void OLED_Refresh(){
+    if(OLED_show_ok == 0){
+        if (Connect_flag == 1){
+            OLED_ShowChinese(76,6,35);
+            OLED_ShowChinese(92,6,36);
+        } else{
+            OLED_ShowChinese(76,6,37);
+            OLED_ShowChinese(92,6,38);
+        }
+        delay_ms(3000);
+        OLED_Clear();
+        delay_ms(100);
+        OLED_Show();
+        OLED_show_ok = 1;
+    }
     if (!nowStatus.threshold_PW){
         OLED_ShowNum(40,0,nowData.temp,2,16);
         OLED_ShowNum(40,2,nowData.soil,2,16);
@@ -105,69 +121,69 @@ void OLED_Refresh(){
     OLED_ShowNum(104,0,nowData.humi,2,16);
     OLED_ShowNum(104,2,nowData.light,2,16);
     if (nowStatus.pump_pw == 0){
-        OLED_ShowCHinese(40,4,15);
+        OLED_ShowChinese(40,4,15);
     } else{
-        OLED_ShowCHinese(40,4,14);
+        OLED_ShowChinese(40,4,14);
     }
     switch (nowStatus.light_num) {
         case 0:
-            OLED_ShowCHinese(104,4,15);
+            OLED_ShowChinese(104,4,15);
             break;
         case 1:
-            OLED_ShowCHinese(104,4,22);
+            OLED_ShowChinese(104,4,22);
             break;
         case 2:
-            OLED_ShowCHinese(104,4,23);
+            OLED_ShowChinese(104,4,23);
             break;
         case 3:
-            OLED_ShowCHinese(104,4,24);
+            OLED_ShowChinese(104,4,24);
             break;
         default:
             break;
     }
     switch (nowStatus.feng_num) {
         case 0:
-            OLED_ShowCHinese(40,6,15);
+            OLED_ShowChinese(40,6,15);
             break;
         case 1:
-            OLED_ShowCHinese(40,6,22);
+            OLED_ShowChinese(40,6,22);
             break;
         case 2:
-            OLED_ShowCHinese(40,6,23);
+            OLED_ShowChinese(40,6,23);
             break;
         case 3:
-            OLED_ShowCHinese(40,6,24);
+            OLED_ShowChinese(40,6,24);
             break;
         default:
             break;
     }
     if (nowStatus.Control_PW){
-        OLED_ShowCHinese(60,6,27);
-        OLED_ShowCHinese(76,6,28);
+        OLED_ShowChinese(60,6,27);
+        OLED_ShowChinese(76,6,28);
     } else if (nowStatus.threshold_PW){
-        OLED_ShowCHinese(60,6,30);
-        OLED_ShowCHinese(76,6,31);
+        OLED_ShowChinese(60,6,30);
+        OLED_ShowChinese(76,6,31);
     } else{
-        OLED_ShowCHinese(60,6,29);
-        OLED_ShowCHinese(76,6,28);
+        OLED_ShowChinese(60,6,29);
+        OLED_ShowChinese(76,6,28);
     }
     if (nowStatus.beep_pw == 0){
-        OLED_ShowCHinese(96,6,25);
-        OLED_ShowCHinese(112,6,26);
+        OLED_ShowChinese(96,6,25);
+        OLED_ShowChinese(112,6,26);
     }
     if(nowStatus.beep_pw == 1 && nowStatus.pump_pw == 1){
         OLED_ShowString(96,6,"    ");
         delay_ms(150);
-        OLED_ShowCHinese(96,6,20);
-        OLED_ShowCHinese(112,6,21);
+        OLED_ShowChinese(96,6,20);
+        OLED_ShowChinese(112,6,21);
         delay_ms(150);
         OLED_ShowString(96,6,"    ");
     }
     if(nowStatus.beep_pw == 1 && nowStatus.feng_num != 0){
         OLED_ShowString(96,6,"    ");
         delay_ms(150);
-        OLED_ShowCHinese(96,6,18);
-        OLED_ShowCHinese(112,6,19);
+        OLED_ShowChinese(96,6,18);
+        OLED_ShowChinese(112,6,19);
         delay_ms(150);
         OLED_ShowString(96,6,"    ");
     }
@@ -275,8 +291,10 @@ void Auto_Remote(){
             case 98:        //UP
                 if (nowStatus.threshold_num == 0){
                     nowStatus.temp_th++;
+                    if (nowStatus.temp_th > 50) nowStatus.temp_th = 10;
                 } else if (nowStatus.threshold_num == 1){
                     nowStatus.soil_th++;
+                    if (nowStatus.soil_th > 90) nowStatus.soil_th = 10;
                 }
                 Beep_40ms();
                 break;
@@ -291,8 +309,10 @@ void Auto_Remote(){
             case 168:       //DOWN
                 if (nowStatus.threshold_num == 0){
                     nowStatus.temp_th--;
+                    if (nowStatus.soil_th < 10) nowStatus.soil_th = 50;
                 } else if (nowStatus.threshold_num == 1){
                     nowStatus.soil_th--;
+                    if (nowStatus.soil_th < 10) nowStatus.soil_th = 90;
                 }
                 Beep_40ms();
                 break;
@@ -384,6 +404,7 @@ void Publish_Trans(){
 
 //分析接收报文
 void Analysis_Subs(){
+    printf("%s",(char *)MQTT_CMDOutPtr);
     if (nowStatus.Control_PW == 0){
         //水泵
         if(strstr((char *)MQTT_CMDOutPtr+2,"\"pump_pw\":0")){
@@ -427,20 +448,6 @@ void Analysis_Subs(){
         }else if(strstr((char *)MQTT_CMDOutPtr+2,"\"beep_pw\":1")){
             nowStatus.beep_pw = 1;
         }
-        if(strstr((char *)MQTT_CMDOutPtr+2,"\"temp_th\":")) {
-            char *ptr = strstr((char *)MQTT_CMDOutPtr+2,"\"temp_th\":");
-            if (ptr != NULL){
-                sscanf(ptr+10, "%hhu", &nowStatus.temp_th);
-                Write_Threshold();
-            }
-        }
-        if(strstr((char *)MQTT_CMDOutPtr+2,"\"soil_th\":")) {
-            char *ptr = strstr((char *)MQTT_CMDOutPtr+2,"\"soil_th\":");
-            if (ptr != NULL){
-                sscanf(ptr+10, "%hhu", &nowStatus.soil_th);
-                Write_Threshold();
-            }
-        }
     }
     //自动化
     if(strstr((char *)MQTT_CMDOutPtr+2,"\"Control_PW\":0")){
@@ -451,5 +458,19 @@ void Analysis_Subs(){
         nowStatus.Control_PW = 0;
         LED7 = 1;
         Cut_Control();
+    }
+    if(strstr((char *)MQTT_CMDOutPtr+2,"\"temp_th\":")) {
+        char *ptr = strstr((char *)MQTT_CMDOutPtr+2,"\"temp_th\":");
+        if (ptr != NULL){
+            sscanf(ptr+10, "%2d", &nowStatus.temp_th);
+            Write_Threshold();
+        }
+    }
+    if(strstr((char *)MQTT_CMDOutPtr+2,"\"soil_th\":")) {
+        char *ptr = strstr((char *)MQTT_CMDOutPtr+2,"\"soil_th\":");
+        if (ptr != NULL){
+            sscanf(ptr+10, "%2d", &nowStatus.soil_th);
+            Write_Threshold();
+        }
     }
 }

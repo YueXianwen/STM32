@@ -36,17 +36,17 @@ int main(void)
     W25QXX_Init();                  //W25Q16初始化
     DHT11_Init();                   //DHT11初始化
     Alink_Init();                   //Alink初始化
-    OLED_Show();                    //OLED界面初始化
+    OLED_Start();                   //启动界面
     Beep_40ms();
 
     while(1) {
         if (t%50 == 0) LED0 = !LED0;                                //程序运行指示灯
         if (t%2 == 0) connect_deal();                               //连接处理
+        if (t%10 == 0) OLED_Refresh();                              //OLED刷新
         if (t%100 == 0) Read_Data();                                //数据读取
         if (t%50 == 0 && nowStatus.Control_PW == 1) Control();      //自动控制
         if (t%10 == 0) Beep_Run();                                  //报警处理
         if (Remote_Scan()) Auto_Remote();                           //红外处理
-        if (t%10 == 0) OLED_Refresh();                              //OLED刷新
         if (t%100 == 0 && ConnectPack_flag == 1) Publish_Trans();   //发布消息报文
         t++;
         delay_ms(10);

@@ -51,7 +51,7 @@ extern char Ping_flag;         //外部变量声明，ping报文状态      0：正常状态，等
 															 
 extern char Connect_flag;      //外部变量声明，同服务器连接状态  0：还没有连接服务器  1：连接上服务器了
 extern char ReConnect_flag;    //外部变量声明，重连服务器状态    0：连接还存在  1：连接断开，重连
-extern char ConnectPack_flag;  //外部变量声明，CONNECT报文状态   1：CONNECT报文成功
+extern char ConnectPack_flag;  //外部变量声明，CONNECT报文状态  1：CONNECT报文成功
 extern char SubcribePack_flag; //外部变量声明，订阅报文状态      1：订阅报文成功
 
 void MQTT_Buff_Init(void);

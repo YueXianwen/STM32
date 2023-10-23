@@ -29,7 +29,8 @@ void OLED_ShowChar(unsigned char x,unsigned char y,unsigned char chr); //ÏÔÊ¾×Ö·
 void OLED_ShowNum(unsigned char x,unsigned char y,unsigned int num,unsigned char len,unsigned char size2); //ÔÚÖ¸¶¨µÄÎ»ÖÃ£¬ÏÔÊ¾Ò»¸öÖ¸¶¨ÊıµÄ³¤¶È´óĞ¡º¯Êı
 void OLED_ShowString(unsigned char x,unsigned char y,unsigned char *p);	 //ÔÚÖ¸¶¨Î»ÖÃ¿ªÊ¼ÏÔÊ¾×Ö·û´®º¯Êı
 void OLED_Set_Pos(unsigned char x, unsigned char y);		//»­µãº¯Êı
-void OLED_ShowCHinese(unsigned char x,unsigned char y,unsigned char no); //ÉùÃ÷ÔÚÖ¸¶¨Î»ÖÃÏÔÊ¾ºº×Öº¯Êı
+void OLED_ShowChinese(unsigned char x,unsigned char y,unsigned char no); //ÉùÃ÷ÔÚÖ¸¶¨Î»ÖÃÏÔÊ¾ºº×Ö(16*16)º¯Êı
+void OLED_ShowChinese_big(unsigned char x,unsigned char y,unsigned char no); //ÉùÃ÷ÔÚÖ¸¶¨Î»ÖÃÏÔÊ¾ºº×Ö(24*24)º¯Êı
 void OLED_DrawBMP(unsigned char x0, unsigned char y0,unsigned char x1, unsigned char y1,unsigned char BMP[]); //ÏÔÊ¾Í¼Æ¬º¯Êı
 void OLED_Scroll(void);	//¹ö¶¯º¯Êı
 

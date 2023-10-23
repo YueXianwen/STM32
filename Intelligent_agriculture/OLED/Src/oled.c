@@ -297,7 +297,7 @@ void OLED_ShowString(unsigned char x,unsigned char y,unsigned char *chr)
 					no：字体的序号
 	@retval			无
  */
-void OLED_ShowCHinese(unsigned char x,unsigned char y,unsigned char no)
+void OLED_ShowChinese(unsigned char x,unsigned char y,unsigned char no)
 {
     unsigned char t,adder=0; //定义变量
 
@@ -315,6 +315,28 @@ void OLED_ShowCHinese(unsigned char x,unsigned char y,unsigned char no)
     }
 }
 
+void OLED_ShowChinese_big(unsigned char x,unsigned char y,unsigned char no)
+{
+    unsigned char t,adder=0; //定义变量
+    OLED_Set_Pos(x,y);	//从 x y 开始画点，先画第一页
+    for(t=0;t<24;t++) //循环24次，画第一页的24列
+    {
+        OLED_WR_Byte(Hzk_24[no][t],OLED_DATA);//画no在数组位置的第一页24列的点
+        adder+=1; //数组地址加1
+    }
+    OLED_Set_Pos(x,y+1); //画第二页
+    for(t=0;t<24;t++)//循环24次，画第二页的24列
+    {
+        OLED_WR_Byte(Hzk_24[no][t+24],OLED_DATA);//画no在数组位置的第二页24列的点
+        adder+=1;//数组地址加1
+    }
+    OLED_Set_Pos(x,y+2); //画第三页
+    for(t=0;t<24;t++)//循环24次，画第二页的16列
+    {
+        OLED_WR_Byte(Hzk_24[no][t+48],OLED_DATA);//画no在数组位置的第三页24列的点
+        adder+=1;//数组地址加1
+    }
+}
 
 /*
 	@brief	显示图片
