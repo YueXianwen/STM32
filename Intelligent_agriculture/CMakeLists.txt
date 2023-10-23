@@ -49,11 +49,11 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(CORE/Inc SYSTEM/Inc STM32F10x_FWLib/Inc USER/Inc HARDWARE/Inc OLED/Inc REMOTE/Inc ALINK/Inc ALINK/HMAC)
+include_directories(CORE/Inc SYSTEM/Inc STM32F10x_FWLib/Inc USER/Inc HARDWARE/Inc OLED/Inc REMOTE/Inc ALINK/Inc ALINK/HMAC SPI_W25Q16/Inc)
 
 #add_definitions(-USE_STDPERIPH_DRIVER -DSTM32F10X_HD)
 
-file(GLOB_RECURSE SOURCES "Startup/*.*" "CORE/*.*" "SYSTEM/*.*" "STM32F10x_FWLib/*.*" "USER/*.*" "HARDWARE/*.*" "OLED/*.*" "REMOTE/*.*" "ALINK/*.*")
+file(GLOB_RECURSE SOURCES "Startup/*.*" "CORE/*.*" "SYSTEM/*.*" "STM32F10x_FWLib/*.*" "USER/*.*" "HARDWARE/*.*" "OLED/*.*" "REMOTE/*.*" "ALINK/*.*" "SPI_W25Q16/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103RBTX_FLASH.ld)
 

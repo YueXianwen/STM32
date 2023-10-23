@@ -12,6 +12,7 @@
 #include "remote.h"
 #include "data.h"
 #include "connect.h"
+#include "w25qxx.h"
 
 u8 t = 0;//计数
 extern myData nowData;
@@ -19,8 +20,8 @@ extern myStatus nowStatus;
 
 int main(void)
 {
-    uart_init(115200);
-    PrintfInit(USART1);
+    uart_init(115200);       //串口初始化
+    PrintfInit(USART1);       //输出函数初始化
     delay_init();                   //延时函数初始化
     led_init();                     //LED初始化
     beep_init();                    //蜂鸣器初始化
@@ -32,14 +33,14 @@ int main(void)
     OLED_Init();                    //OLED初始化
     OLED_Clear();                   //OLED清除
     delay_ms(1000);            //延时1秒
+    W25QXX_Init();                  //W25Q16初始化
     DHT11_Init();                   //DHT11初始化
     Alink_Init();                   //Alink初始化
-
-    OLED_Show();
+    OLED_Show();                    //OLED界面初始化
     Beep_40ms();
 
     while(1) {
-        if (t%50 == 0) LED0 = !LED0;
+        if (t%50 == 0) LED0 = !LED0;                                //程序运行指示灯
         if (t%2 == 0) connect_deal();                               //连接处理
         if (t%100 == 0) Read_Data();                                //数据读取
         if (t%50 == 0 && nowStatus.Control_PW == 1) Control();      //自动控制
