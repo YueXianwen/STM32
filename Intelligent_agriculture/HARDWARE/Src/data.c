@@ -404,7 +404,6 @@ void Publish_Trans(){
 
 //分析接收报文
 void Analysis_Subs(){
-    printf("%s",(char *)MQTT_CMDOutPtr);
     if (nowStatus.Control_PW == 0){
         //水泵
         if(strstr((char *)MQTT_CMDOutPtr+2,"\"pump_pw\":0")){
@@ -459,6 +458,7 @@ void Analysis_Subs(){
         LED7 = 1;
         Cut_Control();
     }
+    //读取阈值
     if(strstr((char *)MQTT_CMDOutPtr+2,"\"temp_th\":")) {
         char *ptr = strstr((char *)MQTT_CMDOutPtr+2,"\"temp_th\":");
         if (ptr != NULL){

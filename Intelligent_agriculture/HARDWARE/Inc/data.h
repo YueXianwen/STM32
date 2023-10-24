@@ -24,8 +24,8 @@ typedef struct{
     u8 Control_PW;          //自动控制标志位：0、1
     u8 threshold_PW;        //设置模式标志位：0、1
     u8 threshold_num;       //设置那个参数的阈值：0：空气温度、1：土壤湿度
-    int temp_th;             //空气温度阈值：0-50
-    int soil_th;             //土壤湿度阈值：0-100
+    int temp_th;            //空气温度阈值：10-50
+    int soil_th;            //土壤湿度阈值：10-90
 } myStatus;
 
 //读取储存数据：0：校验码、1：土壤湿度阈值、2：空气湿度阈值
